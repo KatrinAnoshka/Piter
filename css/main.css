@@ -937,9 +937,7 @@ a.calc__button {
     height: 590px;
     background-color: #efefef;
 }
-.steps-1__img,
-.steps-2__img,
-.steps-3__img {
+.steps__img {
     position: relative;
     margin-right: 110px;
 }
