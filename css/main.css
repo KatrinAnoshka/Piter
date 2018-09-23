@@ -818,7 +818,7 @@ a.booked__phone:hover {
     padding-top: 25px;
 }
 .calc .input-name {
-    color: #9e9e9e
+    color: #9e9e9e;
     font-weight: 300;
     padding-left: 15px;
     border-radius: 5px;
@@ -856,6 +856,180 @@ a.calc__button {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
+}
+
+/************---------Section-Numbers---------************/
+
+.numbers {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    position: relative;
+    top: -315px;
+}
+.numbers-wrap {
+    padding: 80px 20px 100px;
+    width: 1060px;
+}
+.numbers__title {
+    font-size: 1.87em;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #1165b1;
+    text-align: center;
+    text-transform: uppercase;
+}
+.numbers__items {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    margin-top: 90px;
+}
+.numbers__item {
+    color: #afafaf;
+    text-align: center;
+}
+.number {
+    font-size: 2.26em;
+    font-weight: bold;
+}
+.nm-descr {
+    font-size: 1.49em;
+    padding-top: 15px;
+}
+.numbers__line {
+    width: 4px;
+    height: 70px;
+    background-color: #ffc000;
+    transform: rotate(-35deg);
+}
+.numbers__item--orange {
+    color: #ffc000;
+}
+
+/*************--------Section-Steps--------*************/
+
+.steps {
+    position: relative;
+    top: -315px;
+}
+.steps__wrap,
+.steps-2__wrap,
+.steps-3__wrap {
+    width: 1140px;
+    padding: 100px 20px 180px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.steps-1,
+.steps-3 {
+    width: 100%;
+    height: 590px;
+    background-color: #efefef;
+}
+.steps-1__img,
+.steps-2__img,
+.steps-3__img {
+    position: relative;
+    margin-right: 110px;
+}
+.steps__round {
+    width: 310px;
+    height: 310px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 31px rgba(64, 146, 188, 0.72);
+    position: relative;
+}
+.steps__number {
+    font-size: 14.72em;
+    font-weight: bold;
+    color: #198bc7;
+    position: absolute;
+    bottom: 55px;
+    right: 105px;
+}
+.steps__text {
+    font-size: 6.38em;
+    font-weight: bold;
+    text-shadow: 0 0 31px rgba(64, 146, 188, 0.72);
+    color: #fff;
+    position: absolute;
+    bottom: 84px;
+    right: 125px;
+}
+.steps__title {
+    color: #198bc7;
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding-bottom: 45px;
+}
+.steps-1__text,
+.steps-2__text,
+.steps-3__text {
+    color: #000;
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+.steps-2 {
+    width: 100%;
+    height: 279px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.steps-2:before {
+    content: "";
+    position: absolute;
+    height: 105px;
+    width: 102%;
+    transform: rotate(-3deg);
+    top: -58px;
+    left: -1%;
+    background: #fff;
+}
+.steps-2:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 105px;
+    width: 102%;
+    transform: rotate(3deg);
+    bottom: -180px;
+    left: -1%;
+    background: #fff;
+}
+.steps-2__img {
+    margin-left: 110px;
+    margin-right: 0;
+}
+.steps-2__wrap {
+    padding: 78px 20px 180px;
+}
+.steps-2__img .steps__number {
+    color: #ffc000;
+    right: 70px;
+}
+.steps-3__img .steps__number {
+    right: 70px;
+}
+.steps-3__wrap {
+    margin-top: 120px;
+    padding-top: 178px;
+    padding-bottom: 0;
 }
 
 /***************--------- Pop-up-form ---------***************/
