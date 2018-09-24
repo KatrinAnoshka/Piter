@@ -89,7 +89,7 @@ $(document).ready(function() {
             animation: "slide",
             touch: true,
             // animationLoop: false,
-		    itemWidth: 350,
+		    // itemWidth: 250,
 		    
 		    minItems: 3,
 		    maxItems: 3
