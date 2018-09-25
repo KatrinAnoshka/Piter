@@ -70,6 +70,51 @@ $(document).ready(function() {
 		});
 	}
 
+	/***** Changed height on click *****/
+
+	$(".lawyers__read-more--1").click(function() {
+		$(".lawyers__descr-wrap--1").toggleClass("open");
+		$(".lawyers__read-more--1").text("Скрыть");	
+
+		if($(".lawyers__descr-wrap--1").hasClass("open")){
+            $(".lawyers__read-more--1").text("Скрыть");
+        }
+        else{
+            $(".lawyers__read-more--1").text("Читать далее");
+        }	
+	});
+
+	$(".lawyers__read-more--2").click(function() {
+		$(".lawyers__descr-wrap--2").toggleClass("open");
+		$(".lawyers__read-more--2").text("Скрыть");	
+
+		if($(".lawyers__descr-wrap--2").hasClass("open")){
+            $(".lawyers__read-more--2").text("Скрыть");
+        }
+        else{
+            $(".lawyers__read-more--2").text("Читать далее");
+        }	
+	});
+
+	$(".lawyers__read-more--3").click(function() {
+		$(".lawyers__descr-wrap--3").toggleClass("open");
+		$(".lawyers__read-more--3").text("Скрыть");	
+
+		if($(".lawyers__descr-wrap--3").hasClass("open")){
+            $(".lawyers__read-more--3").text("Скрыть");
+        }
+        else{
+            $(".lawyers__read-more--3").text("Читать далее");
+        }	
+	});
+
+	/* Section-Doubts */
+
+	$(".doubts__item").click(function() {
+		$(".doubts__item").toggleClass("open-doubts");
+	});
+
+
 	/* Pop-Up forms */
 
 	$(".order-call").click(function() {
@@ -85,30 +130,26 @@ $(document).ready(function() {
 	/* Flexslider */
    	
    	$(window).load(function(){
-        $('.stories__flexslider').flexslider({
+        $('.stories__flexslider, .lawyers__flexslider, .proof__flexslider').flexslider({
             animation: "slide",
             touch: true,
             // animationLoop: false,
-		    // itemWidth: 250,
+		    itemWidth: 250,
 		    
 		    minItems: 3,
 		    maxItems: 3
         });
-  //       $('.products .flexslider').flexslider({
-		//     animation: "slide",
-		//     touch: true,		
-	 //  	});
-	 //  	$('.review .flexslider').flexslider({
-		//     animation: "slide",		    
-		//     touch: true
-	 //  	});
-	 //  	$('.flexslider-clients').flexslider({
-		//     animation: "slide",
-		//     touch: true,
-		//     animationLoop: false,
-		//     itemWidth: 210,
-		//     itemMargin: 150
-		// });
+
+        $('.clients__flexslider').flexslider({
+            animation: "slide",
+            touch: true,
+            // animationLoop: false,
+		    itemWidth: 150,
+		    
+		    minItems: 4,
+		    maxItems: 4
+        });
+ 
     });
 
 
