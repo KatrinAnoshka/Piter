@@ -111,7 +111,7 @@ $(document).ready(function() {
 	/* Section-Doubts */
 
 	$(".doubts__item").click(function() {
-		$(".doubts__item").toggleClass("open-doubts");
+		$(this).toggleClass("open-doubts");
 	});
 
 
