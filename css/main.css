@@ -557,7 +557,8 @@ a.cons-form__button {
     flex-direction: column;
     /*justify-content: space-between;*/
     padding: 30px 20px;
-    box-shadow: 0px 0px 51.3px 5.7px rgba(8, 74, 135, 0.4);
+       margin: 35px 10px 35px;
+    box-shadow: 0px 0px 51.3px -13.3px rgba(8, 74, 135, 0.4);
 }
 .stories__slide:before {
     content: "“";
@@ -586,18 +587,14 @@ a.cons-form__button {
     border: none;
     background: transparent;
 }
-.stories__flexslider .flex-viewport {
+/*.stories__flexslider .flex-viewport {
     position: relative;
     overflow: visible !important;
-}
-.stories__flexslider li {
-    width: 300px!important;
-}
+}*/
 .stories-wrap {
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 100%;
-    max-width: 1050px;
-    /*padding: 0 84px;*/
+    max-width: 1090px;
 }
 .slide__img-wrap {
     width: 70px;
@@ -616,7 +613,7 @@ a.cons-form__button {
     font-weight: bold;
 }
 .slide__descr {
-    height: 350px;
+    /*height: 350px;*/
     color: #000;
     /*line-height: 1.6;*/
     text-align: center;
@@ -646,6 +643,7 @@ a.stories__button {
     font-size: 0.79em;
     line-height: 3.6;
     text-transform: uppercase;
+    margin-top: 20px;
 }
 
 .stories__slide:hover a.stories__button {
@@ -655,10 +653,6 @@ a.stories__button {
     text-align: center;
     border: none;
     line-height: 4.1;
-}
-.stories .flexslider .slides > li {
-    margin-right: 15px!important;
-    margin-left: 15px;
 }
 .stories .flex-direction-nav a.flex-prev {
     width: 50px;
@@ -1288,14 +1282,14 @@ a.step-form__phone {
     padding: 50px 0;  
 }
 
-
 .lawyers__slide {
-    width: 330px;
-    height: 840px;
     padding: 25px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 51.3px 5.7px rgba(8, 74, 135, 0.4);
+    box-shadow: 0px 0px 56.3px -6.3px rgba(8, 74, 135, 0.4);
+    margin: 0 10px;
+    max-width: 95%; /*maximum width for all slides*/
+    margin: 0 auto 10px; /*centering images in the container*/
 }
 .lawyers__img-wrap {
     width: 100%;
@@ -1515,6 +1509,16 @@ a.step-form__phone {
 .proof__item {
     text-align: center;
 }
+/*.proof__item a {
+    margin: 0 10px;
+}*/
+.proof__item img {
+    margin: 0 10px;
+    max-height: 450px; /*maximum height for all slides*/
+    width: auto; /*proper aspect ratio of images*/
+    max-width: 95%; /*maximum width for all slides*/
+    margin: 0 auto; /*centering images in the container*/
+}
 
 /**********-------------Section-Judge-------------**********/
 
@@ -1703,6 +1707,246 @@ a.question__button {
     margin-top: 25px;
 }
 
+/**********----------Section-Review----------**********/
+
+.review {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -480px;
+    z-index: 0;
+}
+.review__wrap {
+    width: 1090px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+.review__title {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #1165b1;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.review__container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.tab_content {
+    margin-bottom: 15px;
+}
+.tabs {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.tab {
+    width: 167px;
+    cursor: pointer;
+}
+.tab:nth-child(2) {
+    margin: 0 10px;
+} 
+/*.audio__item,
+.review__audio {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}*/
+.audio__title {
+    font-size: 0.8em;
+    color: #000;
+    line-height: 4;
+}
+.audio__item {
+    height: 395px;
+    overflow: hidden;
+}
+/*Audio*/
+
+.mejs-container {
+    background: #ebebeb;
+    font-family: Helvetica, Arial;
+    text-align: left;
+    vertical-align: top;
+    text-indent: 0;
+    width: 465px!important;
+    max-width: 100%;
+    height: 50px !important;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.mejs-container .mejs-controls {
+    height: 100%;
+    background: transparent;
+    display: flex;
+}
+
+.mejs-controls .mejs-time-rail span,
+.mejs-controls .mejs-time-rail a {
+    display: block;
+    width: 180px;
+    height: 100%;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.mejs-controls div.mejs-time-rail {
+    padding-top: initial;
+    height: 100%;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-total {
+    margin: 0
+}
+
+.mejs-container .mejs-controls .mejs-time {
+    color: #fff;
+    display: block;
+    height: 27px;
+    width: auto;
+    padding: 0;
+    line-height: 25px;
+    overflow: hidden;
+    text-align: center;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.mejs-container .mejs-controls .mejs-time {
+    position: absolute;
+    color: #000;
+    right: 10px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    /* font-family: 'Lato'; */
+    font-size: 1em;
+    pointer-events: none;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float-corner {
+    display: none;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float {
+    position: absolute;
+    background: #000;
+    width: 46px;
+    height: 20px;
+    border: none;
+    top: -25px;
+    margin-left: -18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float-current {
+    margin: 0;
+    margin-top: 4px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    left: 0;
+}
+
+.mejs-container .mejs-controls div {
+    height: 100%;
+    width: 50px;
+    position: relative;
+}
+
+.mejs-controls .mejs-button button {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 0 !important;
+    background: transparent;
+    outline: none;
+}
+
+.mejs-controls .mejs-play:after {
+    position: absolute;
+    content: "";
+    background: url(../img/review/play.svg) no-repeat;
+    width: 17px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: all 100ms linear;
+    pointer-events: none;
+}
+
+.mejs-controls .mejs-pause:after {
+    position: absolute;
+    content: "";
+    background: url(../img/review/pause.svg) no-repeat;
+    width: 13px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: all 100ms linear;
+    pointer-events: none;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-total {
+    background: #ebebeb;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+    background: #3c3838;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent));
+    background-image: -moz-linear-gradient( -45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-size: 50px 50px;
+    animation: move 3s linear infinite;
+    opacity: 0.1;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-current {
+    background: linear-gradient(to right, #188bc7, #47b4ee);
+}
+
+.mejs-controls .mejs-button button:focus {
+    outline: none;
+}
+
+@-webkit-keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+/*Audio*/
 /*******----------Section-Conditions----------*******/
 
 .conditions {

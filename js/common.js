@@ -7,36 +7,8 @@ $(document).ready(function() {
         $('.our-contacts').toggleClass('hidden-div');
     });
      
-   	/* Download file */
 
-   	$(".upfile1").click(function () {
-    	$(".file1").trigger('click');
-	});
-	$(".upfile2").click(function () {
-    	$(".file2").trigger('click');
-	});
-	$(".upfile3").click(function () {
-    	$(".file3").trigger('click');
-	});
-	$(".upfile4").click(function () {
-    	$(".file4").trigger('click');
-	});
-	$(".upfile5").click(function () {
-    	$(".file5").trigger('click');
-	});
-	$(".upfile6").click(function () {
-    	$(".file6").trigger('click');
-	});
-	$(".upfile7").click(function () {
-    	$(".file7").trigger('click');
-	});
-	$(".upfile8").click(function () {
-    	$(".file8").trigger('click');
-	});
-	$(".upfile9").click(function () {
-    	$(".file9").trigger('click');
-	});
-
+   	
 	/*  Catalog-main */
 
 	$('.submenu li').click(function(){
@@ -72,48 +44,27 @@ $(document).ready(function() {
 
 	/***** Changed height on click *****/
 
-	$(".lawyers__read-more--1").click(function() {
-		$(".lawyers__descr-wrap--1").toggleClass("open");
-		$(".lawyers__read-more--1").text("Скрыть");	
+	$(".lawyers__read-more").click(function() {
+		$(this).siblings(".lawyers__descr-wrap").toggleClass("open");
 
-		if($(".lawyers__descr-wrap--1").hasClass("open")){
-            $(".lawyers__read-more--1").text("Скрыть");
+		if($(".lawyers__descr-wrap").hasClass("open")){
+            $(this).closest(".lawyers__read-more").text("Скрыть");
         }
         else{
-            $(".lawyers__read-more--1").text("Читать далее");
+            $(this).closest(".lawyers__read-more").text("Читать полностью");
         }	
 	});
 
-	$(".lawyers__read-more--2").click(function() {
-		$(".lawyers__descr-wrap--2").toggleClass("open");
-		$(".lawyers__read-more--2").text("Скрыть");	
-
-		if($(".lawyers__descr-wrap--2").hasClass("open")){
-            $(".lawyers__read-more--2").text("Скрыть");
-        }
-        else{
-            $(".lawyers__read-more--2").text("Читать далее");
-        }	
-	});
-
-	$(".lawyers__read-more--3").click(function() {
-		$(".lawyers__descr-wrap--3").toggleClass("open");
-		$(".lawyers__read-more--3").text("Скрыть");	
-
-		if($(".lawyers__descr-wrap--3").hasClass("open")){
-            $(".lawyers__read-more--3").text("Скрыть");
-        }
-        else{
-            $(".lawyers__read-more--3").text("Читать далее");
-        }	
-	});
-
+	
 	/* Section-Doubts */
 
 	$(".doubts__item").click(function() {
 		$(this).toggleClass("open-doubts");
 	});
 
+	// fancybox
+
+	$("a.fancy").fancybox();
 
 	/* Pop-Up forms */
 
@@ -125,6 +76,21 @@ $(document).ready(function() {
 		mainClass: 'mfp-forms'
 	});
 
+	/*******************  Табы переключатели   *******************/
+	$(".tab_item").not(":first").hide();
+	$(".tabs-wrapper .tab").click(function() {
+		$(".tabs-wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+
+
+// Audio
+	$('audio').mediaelementplayer({
+		features: ['playpause','progress','current','tracks','fullscreen'],
+		audioWidth: 364,
+         audioHeight: 70
+	});
+
 });
 
 	/* Flexslider */
@@ -134,21 +100,30 @@ $(document).ready(function() {
             animation: "slide",
             touch: true,
             // animationLoop: false,
-		    itemWidth: 250,
+		    itemWidth: $('.proof__flexslider, .lawyers__flexslider, .stories__flexslider').width()/3,
 		    
 		    minItems: 3,
 		    maxItems: 3
         });
+// if ($('.opent-menu').is(':visible')) {
 
-        $('.clients__flexslider').flexslider({
+
+
+// } else {
+
+
+
+// }
+$('.clients__flexslider').flexslider({
             animation: "slide",
             touch: true,
             // animationLoop: false,
-		    itemWidth: 150,
+		    itemWidth: $('.clients__flexslider').width()/4,
 		    
 		    minItems: 4,
 		    maxItems: 4
         });
+ 
  
     });
 
