@@ -9,18 +9,6 @@ $(document).ready(function() {
      
 
    	
-	/*  Catalog-main */
-
-	$('.submenu li').click(function(){
-		$divId = $(this).attr('target');
-
-		$('.klishe-row').hide(400);
-		$('#'+$divId).show(400);
-
-		$('.submenu li').removeClass('active');
-		$(this).addClass('active');
-
-	});
 
 	/* Smooth scroll*/
 
@@ -33,7 +21,7 @@ $(document).ready(function() {
 			if (target.length) {
 				$('html,body').animate({
 					scrollTop: target.offset().top - headerHeight
-				}, 800, function() {
+				}, 1500, function() {
 				target.focus();
 			});
 			return false;
@@ -42,7 +30,7 @@ $(document).ready(function() {
 		});
 	}
 
-	/***** Changed height on click *****/
+	/***** Changed height on click (Spoiler) *****/
 
 	$(".lawyers__read-more").click(function() {
 		$(this).siblings(".lawyers__descr-wrap").toggleClass("open");
@@ -52,6 +40,17 @@ $(document).ready(function() {
         }
         else{
             $(this).closest(".lawyers__read-more").text("Читать полностью");
+        }	
+	});
+
+	$(".review__button").click(function() {
+		$(this).siblings(".audio__item").toggleClass("open");
+
+		if($(".audio__item").hasClass("open")){
+            $(this).closest(".review__button").text("Скрыть");
+        }
+        else{
+            $(this).closest(".review__button").text("Слушать все отзывы");
         }	
 	});
 
@@ -66,15 +65,7 @@ $(document).ready(function() {
 
 	$("a.fancy").fancybox();
 
-	/* Pop-Up forms */
-
-	$(".order-call").click(function() {
-		$("#form_back h5").html($(this).text());
-		$("#form_back input[name=formname]").val($(this).text());
-	}).magnificPopup({
-		type:"inline",
-		mainClass: 'mfp-forms'
-	});
+	
 
 	/*******************  Табы переключатели   *******************/
 	$(".tab_item").not(":first").hide();
@@ -87,9 +78,37 @@ $(document).ready(function() {
 // Audio
 	$('audio').mediaelementplayer({
 		features: ['playpause','progress','current','tracks','fullscreen'],
-		audioWidth: 364,
-         audioHeight: 70
+		audioWidth: 465,
+         audioHeight: 50
 	});
+
+// AnimTION
+	// wow = new WOW(
+ //      {
+ //        animateClass: 'animated',
+ //        offset:       -100,
+ //        callback:     function(box) {
+ //          //console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+ //        }
+ //      }
+ //    );
+ //    wow.init();
+new WOW().init();
+	/********************   M E N U  фиксированное  *********************/
+	if ($(window).width() > 992)   {
+		$(window).scroll(function () {
+			var scrolled = $(window).scrollTop();
+			if (scrolled >= 20) {
+				$('header').addClass('scroll');
+			}
+			else {
+				if (scrolled < 180) {
+					$('header').removeClass('scroll');
+				}
+			}
+		});
+	}
+
 
 });
 
@@ -119,7 +138,7 @@ $('.clients__flexslider').flexslider({
             touch: true,
             // animationLoop: false,
 		    itemWidth: $('.clients__flexslider').width()/4,
-		    
+		
 		    minItems: 4,
 		    maxItems: 4
         });

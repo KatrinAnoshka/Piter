@@ -18,12 +18,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<link rel="stylesheet" href="libs/flexslider/flexslider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
 	<link rel="stylesheet" href="libs/mediaElement/mediaelementplayer.min.css" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
 	<link rel="stylesheet" href="css/fonts.css">
-	<link href="https://fonts.googleapis.com/css?family=Exo+2:100,300,400,600,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -52,14 +51,14 @@
 							<span></span>
 						</a>
 						<ul class="menu__links">
-							<li class="menu__links-item"><a href="#">Главная</a></li>
-							<li class="menu__links-item"><a href="#">Услуги</a></li>
-							<li class="menu__links-item"><a href="#">Калькулятор</a></li>
-							<li class="menu__links-item"><a href="#">О нас</a></li>
-							<li class="menu__links-item"><a href="#">Юристы</a></li>
-							<li class="menu__links-item"><a href="#">Этапы работы</a></li>
-							<li class="menu__links-item"><a href="#">Пресса</a></li>
-							<li class="menu__links-item"><a href="#">Контакты</a></li>
+							<li class="menu__links-item"><a href="#home">Главная</a></li>
+							<li class="menu__links-item"><a href="#uslugi">Услуги</a></li>
+							<li class="menu__links-item"><a href="#calculator">Калькулятор</a></li>
+							<li class="menu__links-item"><a href="#review">О нас</a></li>
+							<li class="menu__links-item"><a href="#lawyers">Юристы</a></li>
+							<li class="menu__links-item"><a href="#steps">Этапы работы</a></li>
+							<li class="menu__links-item"><a href="#press">Пресса</a></li>
+							<li class="menu__links-item"><a href="#contacts">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -69,33 +68,32 @@
 					<a href="tel:78126037221" class="our-contacts__phone">+7(812)603-72-21</a>
 					<p class="our-contacts__text">Звоните сейчас!</p>
 				</div>
-
 			</div>
 		</div>
 	</header>
 
 	<!--*************** Section-Header-Main ***************-->
 
-	<section class="header-main">
+	<div id="home" class="header-main">
 		<div class="wrapper header-main__wrap">
 
 			<div class="header-main__descr">
 				<div class="header-main__subtitle">Лицензия Министерства Юстиции РФ № 7812016067</div>
-				<h1 class="header-main__title">Получите неустойку в максимальном<br> размере с гарантией</h1>
+				<h1 class="header-main__title wow bounceInLeft">Получите неустойку в максимальном<br> размере с гарантией</h1>
 				<ul class="header-main__list">
-					<li class="header-main__item">
+					<li class="header-main__item wow bounceInLeft" data-wow-delay="100ms">
 						<img src="img/icons/icon-1.png" alt="icon">
 						<span>Оплата после взыскания</span>
 					</li>
-					<li class="header-main__item">
+					<li class="header-main__item wow bounceInLeft" data-wow-delay="200ms">
 						<img src="img/icons/icon-2.png" alt="icon">
 						<span>Мы заплатим Вам если Вы не хотите судиться</span>
 					</li>
-					<li class="header-main__item">
+					<li class="header-main__item wow bounceInLeft" data-wow-delay="300ms">
 						<img src="img/icons/icon-3.png" alt="icon">
 						<span>Оплата после взыскания</span>
 					</li>
-					<li class="header-main__item">
+					<li class="header-main__item wow bounceInLeft" data-wow-delay="400ms">
 						<img src="img/icons/icon-4.png" alt="icon">
 						<span>Если Вы не хотите судится</span>
 					</li>
@@ -110,58 +108,58 @@
   						<input type="text" class="input-name" placeholder="* Ваше имя" required>
   					</div>
 					<div class="cons-form__input">
-  						<input type="phone" class="input-phone" placeholder="* Ваш телефон" required>
+  						<input type="number" class="input-phone" placeholder="* Ваш телефон" required>
 					</div>
 				</div>
 				<a href="#" class="button cons-form__button">Заказать звонок</a>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<!--***************** Section-Whom *****************-->
 
-	<section class="whom">
+	<div class="whom">
 		<div class="wrapper whom__wrap">			
 			<div class="whom__video">
 				<iframe width="600" height="550" src="https://www.youtube.com/embed/xhzG9WMg3qg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 			<div class="whom__descr clearfix">
-				<p class="whom__text whom__text--first">Надоели бесконечные предложения юристов по взысканию неустойки? Не знаете, как выбрать представителя? Нет гарантий, что адвокат не бросит вас с решением суда или не сможет взыскать деньги?</p>
-				<p class="whom__text">Занимайтесь своими делами, наслаждайтесь жизнью, пока юридические волки будут выгрызать для вас результат, вытряхивая с застройщика всё до последней копейки.</p>
-				<p class="whom__title">Для кого?</p>
-				<p class="whom__text">Это предложение для тех, кто купил квартиру у застройщика, но строительная компания не торопится передавать долгожданное жилье. Поэтому вы жаждете взыскать максимальные компенсации с нарушителей ваших прав.</p>
+				<p class="whom__text whom__text--first wow bounceInRight">Надоели бесконечные предложения юристов по взысканию неустойки? Не знаете, как выбрать представителя? Нет гарантий, что адвокат не бросит вас с решением суда или не сможет взыскать деньги?</p>
+				<p class="whom__text wow bounceInRight">Занимайтесь своими делами, наслаждайтесь жизнью, пока юридические волки будут выгрызать для вас результат, вытряхивая с застройщика всё до последней копейки.</p>
+				<p class="whom__title wow bounceInRight">Для кого?</p>
+				<p class="whom__text wow bounceInRight">Это предложение для тех, кто купил квартиру у застройщика, но строительная компания не торопится передавать долгожданное жилье. Поэтому вы жаждете взыскать максимальные компенсации с нарушителей ваших прав.</p>
 			</div>	
 			<div class="whom-op-title">Для<br> кого?</div>
 		</div>
-	</section>
+	</div>
 
 	<!--************* Section-Features *************-->
 
-	<section class="features">
+	<div class="features">
 		<div class="wrapper features__wrap">
 			<h3 class="features__title">Особенности предложения</h3>
 
 			<div class="features__list">
 				<div class="features__item">
-					<img src="img/features/icon-1.png" alt="icon" class="features__img">
-					<span class="features__text">Первая особенность предложения</span>
+					<img src="img/features/icon-1.png" alt="icon" class="features__img wow bounceInUp" data-wow-delay="0.0s">
+					<span class="features__text wow bounceInDown" data-wow-duration="0.1">Первая особенность предложения</span>
 				</div>
 				<div class="features__item">
-					<img src="img/features/icon-2.png" alt="icon" class="features__img">
-					<span class="features__text">Вторая особенность предложения</span>
+					<img src="img/features/icon-2.png" alt="icon" class="features__img wow bounceInUp" data-wow-delay="0.1s">
+					<span class="features__text wow bounceInDown" data-wow-duration="0.1">Вторая особенность предложения</span>
 				</div>
 				<div class="features__item">
-					<img src="img/features/icon-3.png" alt="icon" class="features__img">
-					<span class="features__text">Третья особенность предложения</span>
+					<img src="img/features/icon-3.png" alt="icon" class="features__img wow bounceInUp" data-wow-delay="0.2s">
+					<span class="features__text wow bounceInDown" data-wow-duration="0.1">Третья особенность предложения</span>
 				</div>
 			</div>
 			<div class="features-op-title">Особенности<br> предложения</div>
 		</div>
-	</section>
+	</div>
 
 	<!--************** Section-Stories **************-->
 
-	<section class="stories">
+	<div class="stories">
 		<div class="wrapper stories-wrap">
 			<h2 class="stories__title">Истории наших клиентов</h2>
 
@@ -251,28 +249,28 @@
 			</div>
 			
 		</div>
-	</section>
+	</div>
 
 	<!--*********** Section-Booked ***********-->
 
 	<div class="booked">
 		<div class="wrapper booked__wrap">
 			<div class="booked__descr">
-				<div class="booked__title">запишитесь на встречу с юристом,<br> который вел эти дела</div>
-				<div class="booked__text">Оставьте заявку и мы постараемся Вам помочь<br>Или позвоните нам:</div>
-				<a href="tel:78126037221" class="booked__phone">+7(812)603-72-21</a>
+				<div class="booked__title wow bounceInLeft">запишитесь на встречу с юристом,<br> который вел эти дела</div>
+				<div class="booked__text wow bounceInLeft">Оставьте заявку и мы постараемся Вам помочь<br>Или позвоните нам:</div>
+				<a href="tel:78126037221" class="booked__phone wow bounceInLeft">+7(812)603-72-21</a>
 			</div>
-			<form action="" class="booked__form">
+			<form class="booked__form">
 				<div class="booked__input">
   					<input type="text" class="input-name" placeholder="* Ваше имя" required>
     				<!-- <div class="placeholder"><span class="star">*</span>Ваше имя</div> -->
 				</div>
 				<div class="booked__input">
-  					<input type="phone" class="input-phone" placeholder="* Ваш телефон" required>
+  					<input type="number" class="input-phone" placeholder="* Ваш телефон" required>
     				<!-- <div class="placeholder"><span class="star">*</span>Ваш телефон</div> -->
 				</div>
 				<div class="booked__input">
-  					<input type="mail" class="input-mail" placeholder="* Ваш email" required>
+  					<input type="email" class="input-mail" placeholder="* Ваш email" required>
     				<!-- <div class="placeholder"><span class="star">*</span>Ваш email</div> -->
 				</div>
 				<a href="#" class="button booked__button">Заказать звонок</a>
@@ -282,7 +280,7 @@
 
 	<!--************ Section-Calc ************-->
 
-	<section class="calc">
+	<div id="calculator" class="calc">
 		<div class="wrapper calc__wrap">
 			<div class="calc__title">Калькулятор неустойки по 214 ФЗ</div>
 			<div class="calc__items">
@@ -303,46 +301,46 @@
 		            </label>
 		            <label>
 		                <span class="calc__span">Уплаченная цена договора:</span>
-		                <input class="input-name" type="date" name="date" placeholder="Дата на который считать неустойку:" required>
+		                <input class="input-name" type="date" name="date" required>
 		            </label>
 		            <a href="#" class="button calc__button">Рассчитать неустойку</a>
 				</div>
 				<div class="calc__item calc__item--main">
-					<span class="calc__name">Сумма неустойки</span>
-					<span class="calc__total">1 052 100 руб.</span>
-					<a href="#" class="calc-order">Заказать звонок</a>
+					<span class="calc__name wow bounceInRight">Сумма неустойки</span>
+					<span class="calc__total wow bounceInRight">1 052 100 руб.</span>
+					<a href="#" class="calc-order wow bounceInRight">Заказать звонок</a>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<!--************ Section-numbers ************-->
 
-	<section class="numbers">
+	<div class="numbers">
 		<div class="wrapper numbers-wrap">
 			<div class="numbers__title">посмотрите на что вы можете потратить<br> сумму полученную от застройщика</div>
 			<div class="numbers__items">
 				<div class="numbers__item">
-					<p class="number">300 000</p>
-					<p class="nm-descr">рублей</p>
+					<p class="number wow bounceInUp">300 000</p>
+					<p class="nm-descr wow bounceInDown">рублей</p>
 				</div>
 				<div class="numbers__line"></div>
 				<div class="numbers__item numbers__item--orange">
-					<p class="number">1 миллион</p>
-					<p class="nm-descr">рублей</p>
+					<p class="number wow bounceInUp">1 миллион</p>
+					<p class="nm-descr wow bounceInDown">рублей</p>
 				</div>
 				<div class="numbers__line"></div>
 				<div class="numbers__item">
-					<p class="number">3 миллиона</p>
-					<p class="nm-descr">рублей</p>
+					<p class="number wow bounceInUp">3 миллиона</p>
+					<p class="nm-descr wow bounceInDown">рублей</p>
 				</div>
 			</div>	
 		</div>
-	</section>
+	</div>
 
 	<!--*************** Section-steps*************** -->
 
-	<section class="steps">
+	<div id="steps" class="steps">
 		<div class="steps-1">
 			<div class="steps__wrap">
 				<div class="steps-1__img">
@@ -352,7 +350,7 @@
 				</div>
 				<div class="steps-1__descr">
 					<div class="steps__title">три шага к получению максимальной неустойки</div>
-					<div class="steps-1__text">Разнообразный и богатый опыт рамки и место обучения кадров позволяет оценить значение форм развития. С другой стороны рамки и место обучения кадров способствует подготовки и реализации соответствующий условий активизации.</div>
+					<div class="steps-1__text wow bounceInRight">Разнообразный и богатый опыт рамки и место обучения кадров позволяет оценить значение форм развития. С другой стороны рамки и место обучения кадров способствует подготовки и реализации соответствующий условий активизации.</div>
 				</div>			
 			</div>
 		</div>	
@@ -360,7 +358,7 @@
 		<div class="steps-2">
 			<div class="steps-2__wrap">
 				<div class="steps-2__descr">
-					<div class="steps-2__text">Разнообразный и богатый опыт рамки и место обучения кадров позволяет оценить значение форм развития. С другой стороны рамки и место обучения кадров способствует подготовки и реализации соответствующий условий активизации. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки направлений прогрессивного развития. </div>
+					<div class="steps-2__text wow bounceInLeft">Разнообразный и богатый опыт рамки и место обучения кадров позволяет оценить значение форм развития. С другой стороны рамки и место обучения кадров способствует подготовки и реализации соответствующий условий активизации. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки направлений прогрессивного развития. </div>
 				</div>
 				<div class="steps-2__img">
 					<div class="steps__round"></div>
@@ -378,42 +376,42 @@
 					<div class="steps__text">шаг</div>
 				</div>
 				<div class="steps-3__descr">
-					<div class="steps-3__text">Разнообразный и богатый опыт рамки и место обучения кадров позволяет оценить значение форм развития. С другой стороны рамки и место обучения кадров способствует подготовки и реализации соответствующий условий активизации. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки направлений прогрессивного развития. </div>
+					<div class="steps-3__text wow bounceInRight">Разнообразный и богатый опыт рамки и место обучения кадров позволяет оценить значение форм развития. С другой стороны рамки и место обучения кадров способствует подготовки и реализации соответствующий условий активизации. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки направлений прогрессивного развития. </div>
 				</div>			
 			</div>
 		</div>
 		
-	</section>
+	</div>
 
 	<!--*********** Section-Step-Form ***********-->
 
-	<section class="step-form">
+	<div class="step-form">
 		<div class="step-form__wrap">
 			<div class="step-form__descr">
-				<div class="step-form__title">сделайте первый шаг к<br> получению заветной суммы</div>
-				<p class="step-form__text">Оставьте заявку и мы постараемся Вам помочь<br>Или позвоните нам:</p>
-				<a href="tel:78126037221" class="step-form__phone">+7(812)603-72-21</a>
+				<div class="step-form__title wow bounceInLeft">сделайте первый шаг к<br> получению заветной суммы</div>
+				<p class="step-form__text wow bounceInLeft">Оставьте заявку и мы постараемся Вам помочь<br>Или позвоните нам:</p>
+				<a href="tel:78126037221" class="step-form__phone wow bounceInLeft">+7(812)603-72-21</a>
 			</div>
 			<div class="step-form__form">
-				<form action="" class="booked__form">
+				<form class="booked__form">
 					<div class="booked__input">
 	  					<input type="text" class="input-name" placeholder="* Ваше имя" required="">    				
 					</div>
 					<div class="booked__input">
-	  					<input type="phone" class="input-phone" placeholder="* Ваш телефон" required="">
+	  					<input type="number" class="input-phone" placeholder="* Ваш телефон" required="">
 					</div>
 					<div class="booked__input">
-	  					<input type="mail" class="input-mail" placeholder="* Ваш email" required="">
+	  					<input type="email" class="input-mail" placeholder="* Ваш email" required="">
 					</div>
 					<a href="#" class="button booked__button">Заказать звонок</a>
 				</form>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<!--*********** Section-Benefit ***********-->
 
-	<section class="benefit">
+	<div class="benefit">
 
 		<div class="benefit-1">
 			<div class="benefit__title">почему вам это выгодно?</div>
@@ -425,8 +423,8 @@
 					<div class="benefit__number">01</div>
 				</div>
 				<div class="benefit__descr">
-					<div class="benefit__subtitle">Получаете деньги на свой счет, а не на счет юриста</div>
-					<div class="benefit__text">В последние два года участились случаи, когда «юрист» с помощью сообщников судебных приставов или сотрудников банка получает деньги дольщика. И потом ищи-свищи такого человека!</div>
+					<div class="benefit__subtitle wow bounceInRight">Получаете деньги на свой счет, а не на счет юриста</div>
+					<div class="benefit__text wow bounceInRight">В последние два года участились случаи, когда «юрист» с помощью сообщников судебных приставов или сотрудников банка получает деньги дольщика. И потом ищи-свищи такого человека!</div>
 				</div>
 			</div>
 		</div>
@@ -434,8 +432,8 @@
 		<div class="benefit-2">
 			<div class="benefit__wrap">
 				<div class="benefit__descr">
-					<div class="benefit__subtitle">Экономите на судебных расходах</div>
-					<div class="benefit__text">В отличие от адвокатов, мы берем все расходы на себя: оплата государственной пошлины, транспортные, почтовые и иные расходы – забудьте об этом;</div>
+					<div class="benefit__subtitle wow bounceInLeft">Экономите на судебных расходах</div>
+					<div class="benefit__text wow bounceInLeft">В отличие от адвокатов, мы берем все расходы на себя: оплата государственной пошлины, транспортные, почтовые и иные расходы – забудьте об этом;</div>
 				</div>
 				<div class="benefit__img benefit-2__img">
 					<div class="benefit__round"></div>
@@ -453,8 +451,8 @@
 					<div class="benefit__number">03</div>
 				</div>
 				<div class="benefit__descr">
-					<div class="benefit__subtitle">Экономите время, избегая очередей, поездок, «отфутболиваний» чиновников</div>
-					<div class="benefit__text">Всем прекрасно известно, как наши государственные органы относятся к гражданам – попробуй чего добейся! Для этого вы нанимаете специально обученных людей, они знают своё дело;</div>
+					<div class="benefit__subtitle wow bounceInRight">Экономите время, избегая очередей, поездок, «отфутболиваний» чиновников</div>
+					<div class="benefit__text wow bounceInRight">Всем прекрасно известно, как наши государственные органы относятся к гражданам – попробуй чего добейся! Для этого вы нанимаете специально обученных людей, они знают своё дело;</div>
 				</div>
 			</div>
 		</div>
@@ -462,8 +460,8 @@
 		<div class="benefit-4">
 			<div class="benefit__wrap">
 				<div class="benefit__descr">
-					<div class="benefit__subtitle">Экономите на судебных расходах</div>
-					<div class="benefit__text">В отличие от адвокатов, мы берем все расходы на себя: оплата государственной пошлины, транспортные, почтовые и иные расходы – забудьте об этом;</div>
+					<div class="benefit__subtitle wow bounceInLeft">Экономите на судебных расходах</div>
+					<div class="benefit__text wow bounceInLeft">В отличие от адвокатов, мы берем все расходы на себя: оплата государственной пошлины, транспортные, почтовые и иные расходы – забудьте об этом;</div>
 				</div>
 				<div class="benefit__img benefit-4__img">
 					<div class="benefit__round"></div>
@@ -481,17 +479,17 @@
 					<div class="benefit__number">05</div>
 				</div>
 				<div class="benefit__descr">
-					<div class="benefit__subtitle">Размеры взысканных сумм на 67% больше, чем у других юристов</div>
-					<div class="benefit__text">Мы не пишем шаблонных, скачанных с интернета документов, и посещаем все заседания. В отличие от других юристов, не отбываем номер в суде, кивая и поддакивая, а излагаем жесткую правовую позицию!</div>
+					<div class="benefit__subtitle wow bounceInRight">Размеры взысканных сумм на 67% больше, чем у других юристов</div>
+					<div class="benefit__text wow bounceInRight">Мы не пишем шаблонных, скачанных с интернета документов, и посещаем все заседания. В отличие от других юристов, не отбываем номер в суде, кивая и поддакивая, а излагаем жесткую правовую позицию!</div>
 				</div>
 			</div>
 		</div>
 		
-	</section>
+	</div>
 
 	<!--*********** Section-Lawyers ***********-->
 
-	<section class="lawyers">
+	<div id="lawyers" class="lawyers">
 		<div class="lawyers__wrap">
 			<div class="lawyers__title">«зубастые» юристы</div>
 			<p class="lawyers__subtitle">Юридическую помощь оказывают только выпускники юридического факультета СПбГУ, который окончил бессменный Президент России – В. В. Путин, а также Премьер-министр России – Д. А. Медведев.</p>
@@ -644,37 +642,37 @@
 		    </ul>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<!--************** Section-Choose **************-->
 
-	<section class="choose">
+	<div class="choose">
 		<div class="step-form__wrap">
 			<div class="step-form__descr">
-				<div class="step-form__title">выберите личного<br>юриста сейчас</div>
-				<p class="step-form__text">Оставьте заявку и мы постараемся Вам помочь<br> Или позвоните нам:</p>
-				<a href="tel:78126037221" class="step-form__phone">+7(812)603-72-21</a>
+				<div class="step-form__title wow bounceInLeft">выберите личного<br>юриста сейчас</div>
+				<p class="step-form__text wow bounceInLeft">Оставьте заявку и мы постараемся Вам помочь<br> Или позвоните нам:</p>
+				<a href="tel:78126037221" class="step-form__phone wow bounceInLeft">+7(812)603-72-21</a>
 			</div>
 			<div class="choose__form">
-				<form action="" class="booked__form">
+				<form class="booked__form">
 					<div class="booked__input">
 	  					<input type="text" class="input-name" placeholder="* Ваше имя" required="">    				
 					</div>
 					<div class="booked__input">
-	  					<input type="phone" class="input-phone" placeholder="* Ваш телефон" required="">
+	  					<input type="number" class="input-phone" placeholder="* Ваш телефон" required="">
 					</div>
 					<div class="booked__input">
-	  					<input type="mail" class="input-mail" placeholder="* Ваш email" required="">
+	  					<input type="email" class="input-mail" placeholder="* Ваш email" required="">
 					</div>
 					<a href="#" class="button booked__button">Заказать звонок</a>
 				</form>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<!--************ Section-Clients ************-->
 
-	<section class="clients">
+	<div class="clients">
 		<div class="clients__wrap">
 			<div class="clients__title">Побежденные застройщики</div>
 
@@ -713,38 +711,38 @@
 			    </ul>
 				</div>
 		</div>
-	</section>
+	</div>
 
 	<!--********** Section-Guarantees **********-->
 
-	<section class="guarantees">
+	<div class="guarantees">
 		<div class="guarantees__title">Какие гарантии?</div>
 
 		<div class="guarantees__wrap">
 			<div class="guarantees__item">
-				<img src="img/guarantees/icon-1.png" alt="Гарантии" class="guarantees__img">
-				<div class="guarantees__subtitle">лицензированные минюстом юристы</div>
-				<p class="guarantees__text">В отличие от других юристов, просто организовавших ООО или ИП (или работающих как частное лицо), мы имеем аккредитацию Министерства Юстиции РФ. Вы получаете идеальное качество оказанных услуг, проверенное государственным органом.</p>
+				<img src="img/guarantees/icon-1.png" alt="Гарантии" class="guarantees__img wow bounceInUp" data-wow-delay="0.0s">
+				<div class="guarantees__subtitle wow bounceInLeft" data-wow-duration="0.1">лицензированные минюстом юристы</div>
+				<p class="guarantees__text wow bounceInRight" data-wow-duration="0.1">В отличие от других юристов, просто организовавших ООО или ИП (или работающих как частное лицо), мы имеем аккредитацию Министерства Юстиции РФ. Вы получаете идеальное качество оказанных услуг, проверенное государственным органом.</p>
 			</div>
 
 			<div class="guarantees__item">
-				<img src="img/guarantees/icon-2.png" alt="Гарантии" class="guarantees__img">
-				<div class="guarantees__subtitle">мы с вами до получения денег</div>
-				<p class="guarantees__text">В отличие от других адвокатов, мы работаем не «до исполнительного листа», а до поступления денег на счет.</p>
+				<img src="img/guarantees/icon-2.png" alt="Гарантии" class="guarantees__img wow bounceInUp" data-wow-delay="0.1s">
+				<div class="guarantees__subtitle wow bounceInLeft" data-wow-duration="0.1">мы с вами до получения денег</div>
+				<p class="guarantees__text wow bounceInRight" data-wow-duration="0.1">В отличие от других адвокатов, мы работаем не «до исполнительного листа», а до поступления денег на счет.</p>
 			</div>
 
 			<div class="guarantees__item">
-				<img src="img/guarantees/icon-3.png" alt="Гарантии" class="guarantees__img">
-				<div class="guarantees__subtitle">мы работаем в рамках закона</div>
-				<p class="guarantees__text">Работаем по двум законам:<br>1. Гражданский кодекс РФ <br>2. Федеральный закон <br> «О некоммерческих организациях»</p>
+				<img src="img/guarantees/icon-3.png" alt="Гарантии" class="guarantees__img wow bounceInUp" data-wow-delay="0.2s">
+				<div class="guarantees__subtitle wow bounceInLeft" data-wow-duration="0.1">мы работаем в рамках закона</div>
+				<p class="guarantees__text wow bounceInRight" data-wow-duration="0.1">Работаем по двум законам:<br>1. Гражданский кодекс РФ <br>2. Федеральный закон <br> «О некоммерческих организациях»</p>
 			</div>
 		</div>
 		<div class="guarantees-op-title">Гарантии</div>
-	</section>
+	</div>
 
 	<!--********* Section-Proof *********-->
 
-	<section class="proof">
+	<div id="press" class="proof">
 		<div class="proof__wrap">
 			<div class="proof__title">Вы точно получите свои деньги Вот почему!</div>
 			<div class="proof__descr">Одна из самых больших проблем всех юристов – неспособность взыскивать деньги с должников. <br>Поэтому Интернет пестрит слухами о том, что взыскать деньги по суду невозможно. <br>В отличие от 95% адвокатов, мы всегда взыскиваем деньги. И вот доказательства!</div>
@@ -786,37 +784,37 @@
 			    </ul>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<!--************* Section-Judge *************-->
 
-	<section class="judge">
+	<div class="judge">
 		<div class="step-form__wrap">
 			<div class="step-form__descr">
-				<div class="step-form__title">судья уже мог бы писать ваш исполнительный <br> лист. Прочь сомнения!</div>
-				<p class="step-form__text">Оставьте заявку и мы постараемся Вам помочь<br> Или позвоните нам:</p>
-				<a href="tel:78126037221" class="step-form__phone">+7(812)603-72-21</a>
+				<div class="step-form__title wow bounceInLeft">судья уже мог бы писать ваш исполнительный <br> лист. Прочь сомнения!</div>
+				<p class="step-form__text wow bounceInLeft">Оставьте заявку и мы постараемся Вам помочь<br> Или позвоните нам:</p>
+				<a href="tel:78126037221" class="step-form__phone wow bounceInLeft">+7(812)603-72-21</a>
 			</div>
 			<div class="choose__form">
-				<form action="" class="booked__form">
+				<form class="booked__form">
 					<div class="booked__input">
 	  					<input type="text" class="input-name" placeholder="* Ваше имя" required="">    				
 					</div>
 					<div class="booked__input">
-	  					<input type="phone" class="input-phone" placeholder="* Ваш телефон" required="">
+	  					<input type="number" class="input-phone" placeholder="* Ваш телефон" required="">
 					</div>
 					<div class="booked__input">
-	  					<input type="mail" class="input-mail" placeholder="* Ваш email" required="">
+	  					<input type="email" class="input-mail" placeholder="* Ваш email" required="">
 					</div>
 					<a href="#" class="button booked__button">Заказать звонок</a>
 				</form>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<!--************ Section-Doubts ************-->
 
-	<section class="doubts">
+	<div class="doubts">
 		<div class="doubts__title">Остались сомнения?</div>
 
 		<div class="doubts__wrap">
@@ -849,25 +847,25 @@
 				</li>
 			</ul>
 		</div>
-	</section>
+	</div>
 
 	<!--*********** Section-Question ***********-->
 
 	<div class="question">
 		<div class="question__wrap">
 			<div class="question__descr">
-				<div class="question__title">8 из 10, дошедших до этого места<br> не имеют сомнений. <br> у вас остались вопросы? <br>задайте их прямо сейчас!</div>
-				<p class="question__text">Задайте свой вопрос и наши  юристы дадут<br> вам профессиональный ответ за<br> 5 минут</p>
+				<div class="question__title wow bounceInLeft">8 из 10, дошедших до этого места<br> не имеют сомнений. <br> у вас остались вопросы? <br>задайте их прямо сейчас!</div>
+				<p class="question__text wow bounceInLeft" >Задайте свой вопрос и наши  юристы дадут<br> вам профессиональный ответ за<br> 5 минут</p>
 			</div>
-				<form action="" class="question__form">
+				<form class="question__form">
 					<div class="question__input">
 	  					<input type="text" class="input-name" placeholder="* Ваше имя" required="">    				
 					</div>
 					<div class="question__input">
-	  					<input type="phone" class="input-phone" placeholder="* Ваш телефон" required="">
+	  					<input type="number" class="input-phone" placeholder="* Ваш телефон" required="">
 					</div>
 					<div class="question__input">
-	  					<input type="mail" class="input-mail" placeholder="* Ваш email" required="">
+	  					<input type="email" class="input-mail" placeholder="* Ваш email" required="">
 					</div>					
 				</form>
 			
@@ -880,7 +878,7 @@
 
 	<!--************* Section-Review *************-->
 
-	<div class="review">
+	<div id="review" class="review">
 		<div class="review__wrap">
 			<div class="review__title">Отзывы о нашей работе</div>
 
@@ -891,13 +889,13 @@
 		                    
 		                    <div class="tab_content">
 		                        <div class="tab_item" style="display: table;">
-		                            <iframe width="520" height="300" src="https://www.youtube.com/embed/yI0XVs9qfcU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		                            <iframe width="520" height="295" src="https://www.youtube.com/embed/yI0XVs9qfcU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		                        </div>
 		                        <div class="tab_item" style="display: none;">
-		                            <iframe width="520" height="300" src="https://www.youtube.com/embed/9T2jH7TC8vg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		                            <iframe width="520" height="295" src="https://www.youtube.com/embed/9T2jH7TC8vg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		                        </div>
 		                        <div class="tab_item" style="display: none;">
-		                            <iframe width="520" height="300" src="https://www.youtube.com/embed/UMx_VkeUpCk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		                            <iframe width="520" height="295" src="https://www.youtube.com/embed/UMx_VkeUpCk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		                        </div>
 		                    </div>
 		                    <div class="tabs">
@@ -917,77 +915,98 @@
 				<div class="review__audio">
 					<div class="audio__item">
 					
-				        <audio class="audio" controls="controls">
+				        <audio class="audio wow bounceInRight" controls="controls">
 							<source type="audio/mpeg" src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1">
 						</audio>
-						<span class="audio__title">Чернявская Елена, дольщик “ООО Космос”</span>
+						<div class="audio__title-wrap">
+							<span class="audio__title">Чернявская Елена, дольщик “ООО Космос”</span>
+						</div>	
+
+						<audio class="audio wow bounceInRight" controls="controls">
+							<source type="audio/mpeg" src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1">
+						</audio>
+						<div class="audio__title-wrap">
+							<span class="audio__title">Никольский Сергей, дольщик “ООО Заря”</span>
+						</div>	
+
+						<audio class="audio wow bounceInRight" controls="controls">
+							<source type="audio/mpeg" src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1">
+						</audio>
+						<div class="audio__title-wrap">
+							<span class="audio__title">Чернявская Елена, дольщик “ООО Космос”</span>
+						</div>	
+
+						<audio class="audio wow bounceInRight" controls="controls">
+							<source type="audio/mpeg" src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1">
+						</audio>
+						<div class="audio__title-wrap">
+							<span class="audio__title">Никольский Сергей, дольщик “ООО Заря”</span>
+						</div>	
 
 						<audio class="audio" controls="controls">
 							<source type="audio/mpeg" src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1">
 						</audio>
-						<span class="audio__title">Никольский Сергей, дольщик “ООО Заря”</span>
+						<div class="audio__title-wrap">
+							<span class="audio__title">Чернявская Елена, дольщик “ООО Космос”</span>
+						</div>	
 
 						<audio class="audio" controls="controls">
 							<source type="audio/mpeg" src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1">
 						</audio>
-						<span class="audio__title">Чернявская Елена, дольщик “ООО Космос”</span>
-
-						<audio class="audio" controls="controls">
-							<source type="audio/mpeg" src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1">
-						</audio>
-						<span class="audio__title">Никольский Сергей, дольщик “ООО Заря”</span>
-
-						<audio class="audio" controls="controls">
-							<source type="audio/mpeg" src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1">
-						</audio>
-						<span class="audio__title">Чернявская Елена, дольщик “ООО Космос”</span>
-
-						<audio class="audio" controls="controls">
-							<source type="audio/mpeg" src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1">
-						</audio>
-						<span class="audio__title">Никольский Сергей, дольщик “ООО Заря”</span>
-
+						<div class="audio__title-wrap">
+							<span class="audio__title">Никольский Сергей, дольщик “ООО Заря”</span>
+						</div>	
 				       
 					</div>
-					<button class="review__button">Читать полностью</button>
+					<button class="review__button">Слушать все отзывы</button>
 				</div>
+			</div>
+			<div class="review__docs">
+				<a href="img/review/text-1.png" rel="group" class="fancy">			    <img class="review__doc" src="img/review/text-1.png" alt="Документ">
+				</a>
+				<a href="img/review/text-2.png" rel="group" class="fancy">			    <img class="review__doc" src="img/review/text-2.png" alt="Документ">
+				</a>
+				<a href="img/review/text-3.png" rel="group" class="fancy">			    <img class="review__doc" src="img/review/text-3.png" alt="Документ">
+				</a>
+				<a href="img/review/text-4.png" rel="group" class="fancy">			    <img class="review__doc" src="img/review/text-4.png" alt="Документ">
+				</a>   
 			</div>
 		</div>
 	</div>
 	<!--************ Section-Conditions ************-->
 
-	<div class="conditions">
+	<div id="uslugi" class="conditions">
 		<div class="conditions__wrap">
 			<div class="conditions__title">Условия работы</div>
 
 			<div class="cond__container">
 
 				<div class="rates-label">
-					<h4 class="cond__descr-title">Дело ведет:</h4>				
+					<h4 class="cond__descr-title wow bounceInLeft">Дело ведет:</h4>				
 					<ul>
-						<li><div class="cond__tarif">Досудебное урегулирование</div></li>
-						<li><div class="cond__tarif">Составление иска</div></li>
-						<li><div class="cond__tarif">Расчет цены иска (неустойки)</div></li>
-						<li><div class="cond__tarif">Подборка приложений к иску</div></li>
-						<li><div class="cond__tarif">Предъявление иска в суд</div></li>
-						<li><div class="cond__tarif">Судебное разбирательство</div></li>
-						<li><div class="cond__tarif">Включено судебных заседаний</div></li>
-						<li><div class="cond__tarif">Частные жалобы</div></li>
-						<li><div class="cond__tarif">Подготовка к разбирательству</div></li>
-						<li><div class="cond__tarif">Получение судебного решения</div></li>
-						<li><div class="cond__tarif">Жалобы на судью</div></li>
-						<li><div class="cond__tarif">Апелляционная жалоба</div></li>
-						<li><div class="cond__tarif">Судебные приставы</div></li>
-						<li><div class="cond__tarif">Ознакомление с материалами</div></li>
-						<li><div class="cond__tarif">Аудиозапись заседания</div></li>
-						<li><div class="cond__tarif">Видеозапись заседания</div></li>
-						<li><div class="cond__tarif">Замечания на протокол</div></li>
-						<li><div class="cond__tarif">Санкт-Петербургский городской суд</div></li>
-						<li><div class="cond__tarif">Работа с банками</div></li>
-						<li><div class="cond__tarif">Розыск иного имущества</div></li>
-						<li><div class="cond__tarif">Предоставление текстов всех процессуальных документов</div></li>
-						<li><div class="cond__tarif">Все расходы включены (почтовые, транспортные, нотариат, госпошлина в суд)</div></li>
-						<li><div class="cond__tarif">Информирование по делу</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Досудебное урегулирование</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Составление иска</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Расчет цены иска (неустойки)</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Подборка приложений к иску</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Предъявление иска в суд</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Судебное разбирательство</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Включено судебных заседаний</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Частные жалобы</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Подготовка к разбирательству</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Получение судебного решения</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Жалобы на судью</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Апелляционная жалоба</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Судебные приставы</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Ознакомление с материалами</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Аудиозапись заседания</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Видеозапись заседания</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Замечания на протокол</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Санкт-Петербургский городской суд</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Работа с банками</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Розыск иного имущества</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Предоставление текстов всех процессуальных документов</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Все расходы включены (почтовые, транспортные, нотариат, госпошлина в суд)</div></li>
+						<li><div class="cond__tarif wow bounceInLeft">Информирование по делу</div></li>
 					</ul>
 				</div>
 
@@ -1316,20 +1335,20 @@
 	<div class="tarif">
 		<div class="step-form__wrap">
 			<div class="step-form__descr">
-				<div class="step-form__title">Уже выбрали свой тариф?</div>
-				<p class="step-form__text">Оставьте заявку и мы свяжемся с Вами за 30 секунд<br>Или позвоните нам:</p>
-				<a href="tel:78126037221" class="step-form__phone">+7(812)603-72-21</a>
+				<div class="step-form__title wow bounceInLeft">Уже выбрали свой тариф?</div>
+				<p class="step-form__text wow bounceInLeft">Оставьте заявку и мы свяжемся с Вами за 30 секунд<br>Или позвоните нам:</p>
+				<a href="tel:78126037221" class="step-form__phone wow bounceInLeft">+7(812)603-72-21</a>
 			</div>
 			<div class="step-form__form">
-				<form action="" class="booked__form">
+				<form class="booked__form">
 					<div class="booked__input">
 	  					<input type="text" class="input-name" placeholder="* Ваше имя" required="">    				
 					</div>
 					<div class="booked__input">
-	  					<input type="phone" class="input-phone" placeholder="* Ваш телефон" required="">
+	  					<input type="number" class="input-phone" placeholder="* Ваш телефон" required="">
 					</div>
 					<div class="booked__input">
-	  					<input type="mail" class="input-mail" placeholder="* Ваш email" required="">
+	  					<input type="email" class="input-mail" placeholder="* Ваш email" required="">
 					</div>
 					<a href="#" class="button booked__button">Получить консультацию</a>
 				</form>
@@ -1339,17 +1358,17 @@
 
 	<!--************* Section-Contacts *************-->
 
-	<div class="contacts">
+	<div id="contacts" class="contacts">
 		<div class="contacts__wrap">
 			<div class="contacts__title">Контакты</div>
 			<div class="contacts__items">
-				<div class="contacts__item">
+				<div class="contacts__item wow bounceInUp" data-wow-delay="0.0s">
 					<div class="contacts__img-wrap">
 						<img src="img/contacts/icon-1.png" alt="icon" class="contacts__img">
 					</div>	
 					<div class="contacts__address">191167, СПб, <br>пл.Александра Невского, д.2, <br>литера Е, офис 409</div>					
 				</div>
-				<div class="contacts__item">
+				<div class="contacts__item wow bounceInUp" data-wow-delay="0.2s">
 					<div class="contacts__img-wrap">
 						<img src="img/contacts/icon-2.png" alt="icon" class="contacts__img">
 					</div>	
@@ -1358,7 +1377,7 @@
 						<a href="mailto:info@yurist-advokat812.ru" class="contacts__mail">info@yurist-advokat812.ru</a>										
 					</div>
 				</div>
-				<div class="contacts__item">
+				<div class="contacts__item wow bounceInUp" data-wow-delay="0.4s">
 					<div class="contacts__img-wrap">
 						<img src="img/contacts/icon-3.png" alt="icon" class="contacts__img">
 					</div>	
@@ -1373,7 +1392,7 @@
 	<div class="map">
 			<div class="map-wrap" id="map">
 				<div id="Ymap"></div>
-				<div class="map__point">
+				<div class="map__point wow bounceInRight">
 					<img src="img/map-point.png" alt="Map" class="map__point-img">
 				</div>
 			</div>	
@@ -1454,10 +1473,12 @@
 	<![endif]-->
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/jquery/jquery.easing.1.3.js"></script>
+	<!-- <script src="libs/jquery/jquery.easing.1.3.js"></script> -->
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/flexslider/jquery.flexslider.js"></script>
 	<script src="libs/mediaElement/mediaelement-and-player.min.js"></script>
+	<script src="libs/animate/wow.min.js"></script>
+	<!-- <script src="libs/animate/jquery.waypoints.js"></script> -->
 	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 
 	<script src="js/common.js"></script>

@@ -2,11 +2,11 @@ body {
     font-family: sans-serif;
     font-size: 1em;
     color: #fff;
-    min-width: 320px;
     position: relative;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo2', sans-serif;
     overflow-x: hidden;
     max-width: 100%;
+    min-width: 320px;
     height: 100%;
 }
 img {
@@ -47,28 +47,15 @@ a.button:focus {
     margin: 0 auto;
     padding: 0 20px;
 }
-h2.section-title {
-    font-size: 2em;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
-}
-h5 {
-    font-size: 1.2em;
-    color: rgb(3, 146, 188);
-    line-height: 1.2;
-    text-align: center;
-}
 
-/**********Header-menu**********/
+/**********-----------Header-menu-----------**********/
 
 .header {
     background: #fff;
-    /*position: fixed;*/
     width: 100%;
     z-index: 120;
     border-bottom: 4px solid rgb(24, 139, 199);
+    transition: all .3s ease-out;
 }
 .header-wrap {
     display: -moz-flex;
@@ -84,11 +71,13 @@ h5 {
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 15px;
+    transition: padding .3s ease-out;
 }
 .logo-header__title {
     font-size: 0.64em;
     color: #9b9b9b;
     padding-bottom: 15px;
+    transition: .5s ease-out;
 }
 .logo-menu-wrap__total {
     display: -webkit-flex;
@@ -164,6 +153,7 @@ h5 {
     justify-content: space-between;
     -ms-align-items: flex-end;
     align-items: flex-end;
+    transition: .3s ease-out;
 }
 .our-contacts__mail,
 .our-contacts__phone,
@@ -173,12 +163,37 @@ h5 {
 .our-contacts__text {
     font-weight: bold;
     color: #188bc7;
+    transition: margin .3s ease-out;
 }
 .our-contacts__mail {
     font-weight: bold;
+    transition: .3s ease-out;
 }
 
-/*Adaptive menu*/
+/****Header-scroll****/
+
+.scroll {
+    z-index: 101;
+}
+header.scroll {
+    position: fixed;
+    box-shadow: 0 0 31px rgba(64, 146, 188, 0.72);
+}
+header.scroll .logo-header__title,
+header.scroll .our-contacts__mail {
+    display: none;
+}
+header.scroll .header-wrap {
+    padding: 4px 20px;
+} 
+header.scroll .our-contacts {
+    justify-content: center;
+}
+header.scroll .our-contacts__text {
+    margin-top: 5px;
+}
+
+/****Adaptive menu****/
 
 .menu__icon {
     display: none;
@@ -273,13 +288,12 @@ h5 {
 /***********---------Section-Header-Main---------***********/
 
 .header-main {
-    height: 700px;
+    height: 585px;
     background: #436989;
     background-image: url(../img/header-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-top: 115px;
 }
 .header-main__wrap {
     padding-top: 50px;
@@ -329,11 +343,9 @@ h1.header-main__title {
     display: flex;
     -ms-align-items: center;
     align-items: center;
-    /*padding-bottom: 10px;*/
 }
 .header-main__item img {
     padding-right: 30px;
-
 }
 .header-main__item span {
     font-size: 1.1em;
@@ -347,6 +359,16 @@ h1.header-main__title {
     background-color: rgba(255, 255, 255, 0.23);
     padding: 40px 60px;
     text-align: center;
+    transition: box-shadow 0.2s ease-out,
+                transform 0.3s ease-out,
+                -webkit-box-shadow 0.2s ease-out,
+                -webkit-transform 0.3s ease-out;
+}
+.cons-form:hover {
+    box-shadow: 0 0 31px rgba(64, 146, 188, 0.72);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
 }
 .cons-form__title {
     font-size: 1.3em;
@@ -373,7 +395,7 @@ h1.header-main__title {
 }
 .cons-form input::-webkit-input-placeholder {
     font-size: 1em;
-    color: rgba(255, 255, 255);
+    color: rgb(255, 255, 255);
     line-height: 1.25;
 }
 a.cons-form__button {
@@ -401,7 +423,6 @@ a.cons-form__button {
 }
 .whom__wrap {
     position: relative;
-  
 }
 .whom__video {
     overflow: hidden;
@@ -581,7 +602,7 @@ a.cons-form__button {
 }
 .stories__flexslider,
 .lawyers__flexslider {
-    width: 1090px;
+    /*width: 1090px;*/
     max-width: 1090px;
     margin: 0 auto;
     border: none;
@@ -663,12 +684,39 @@ a.stories__button {
     margin-left: -30px;
 
 }
-.stories .flex-direction-nav a.flex-prev:before {
+.stories .flex-direction-nav a.flex-prev:before,
+.lawyers .flex-direction-nav a.flex-prev:before {
     content: '\003C';
     color: #fff;
-    font-size: 34px;
-    margin-left: 12px;
-    margin-top: 6px;
+    font-size: 4em;
+}
+.stories .flexslider:hover .flex-direction-nav .flex-prev {
+    left: -10px;
+    top: 48%;
+}
+.stories .flexslider:hover .flex-direction-nav .flex-next {
+    right: -40px;
+    top: 48%;
+}
+.stories .flex-direction-nav a.flex-next:before,
+.lawyers .flex-direction-nav a.flex-next:before {
+    content: '\003E';
+    color: #fff;
+    font-size: 4em;
+}
+.stories .flex-direction-nav a {
+    height: 65px;
+}
+.lawyers .flex-direction-nav a {
+    height: 50px;
+}
+.lawyers .flexslider:hover .flex-direction-nav .flex-next {
+    right: -43px;
+    top: 40%;
+}
+.lawyers .flexslider:hover .flex-direction-nav .flex-prev {
+    left: -45px;
+    top: 40%;
 }
 
 /***********----------Section-Booked----------***********/
@@ -1120,7 +1168,7 @@ a.step-form__phone {
 .tarif .input-name, 
 .tarif .input-phone, 
 .tarif .input-mail {
-    background: rgba(255, 255, 255);
+    background: rgb(255, 255, 255);
     border: none;
     width: 280px;
     height: 44px;
@@ -1572,7 +1620,7 @@ a.step-form__phone {
     position: relative;
     border-radius: 5px;
     border: 2px solid rgb(27, 120, 205);
-    background: rgba(255, 255, 255);
+    background: rgb(255, 255, 255);
     max-width: 100%;
     height: auto;
     font-size: 1.2em;
@@ -1580,7 +1628,7 @@ a.step-form__phone {
     padding: 20px;
     margin-top: 15px;
     cursor: pointer;
-    transition: color 0.2s ease-out,
+    transition: color 0.2s ease-out;
 }
 .doubts__item:after {
     transition: transform 0.2s ease-out,           
@@ -1604,7 +1652,7 @@ a.step-form__phone {
 .doubts__line {
     width: 100%;
     height: 1px;
-    background: rgb(27, 120, 205, 0.4);
+    background: rgba(27, 120, 205, 0.4);
     margin: 15px 0;
 }
 .doubts__item--hidden {
@@ -1681,7 +1729,7 @@ a.step-form__phone {
 .question__form .input-name, 
 .question__form .input-phone, 
 .question__form .input-mail {
-    background: rgba(255, 255, 255);
+    background: rgb(255, 255, 255);
     border: none;
     width: 280px;
     height: 44px;
@@ -1692,7 +1740,7 @@ a.step-form__phone {
     margin-bottom: 17px;
 }
 .question__textarea textarea {
-    background: rgba(255, 255, 255);
+    background: rgb(255, 255, 255);
     border: none;
     font-family: Arial;
     width: 280px;
@@ -1722,7 +1770,7 @@ a.question__button {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 70px 20px;
+    padding: 70px 20px 10px;
 }
 .review__title {
     font-size: 2.4em;
@@ -1773,11 +1821,32 @@ a.question__button {
 .audio__title {
     font-size: 0.8em;
     color: #000;
-    line-height: 4;
+}
+.audio__title-wrap {
+    margin-bottom: 25px;
 }
 .audio__item {
     height: 395px;
     overflow: hidden;
+}
+.audio__item.open {
+    height: auto;
+    position: relative;
+    z-index: 25;
+}
+.review__button {
+    color: #188bc7;
+    font-size: 0.8em;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    float: right;
+    margin-top: 5px;
+}
+.review__button:hover,
+.review__button:focus,
+.review__button:active {
+    text-decoration: none;
 }
 /*Audio*/
 
@@ -1787,9 +1856,9 @@ a.question__button {
     text-align: left;
     vertical-align: top;
     text-indent: 0;
-    width: 465px!important;
+    /*width: 465px!important;*/
     max-width: 100%;
-    height: 50px !important;
+    /*height: 50px !important;*/
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -1946,7 +2015,32 @@ a.question__button {
         background-position: 50px 50px;
     }
 }
-/*Audio*/
+/*---/Audio*/
+
+.review__docs {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.review__docs a {
+    width: 24.25%;
+    box-shadow: 0px 0px 13.88px 3.12px rgba(24, 139, 199, 0.29);
+    margin-right: 1%;
+}
+.review__docs a:last-child {
+    margin-right: 0;
+}
+.review__docs a:hover {
+    box-shadow: 0 0 31px rgba(64, 146, 188, 0.72);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
 /*******----------Section-Conditions----------*******/
 
 .conditions {
@@ -1962,7 +2056,7 @@ a.question__button {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 70px 20px;
+    padding: 60px 20px 70px;
 }
 .conditions__title {
     font-size: 2.4em;
@@ -2266,6 +2360,16 @@ a.cond__button {
     height: 240px;
     z-index: 19;
     overflow: hidden;
+    transition: box-shadow 0.2s ease-out,
+                transform 0.3s ease-out,
+                -webkit-box-shadow 0.2s ease-out,
+                -webkit-transform 0.3s ease-out;
+}
+.map__point:hover {
+    box-shadow: 0 0 31px rgba(64, 146, 188, 0.72);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
 }
 .map__point-img {
     width: 100%;
@@ -2333,6 +2437,20 @@ a.cond__button {
     color: #fff;
 }
 
+/*Animation*/
+
+/*h1.header-main__title,
+.header-main__item,
+.booked__title,
+.booked__text,
+.booked__phone,
+.step-form__title,
+.step-form__text,
+.step-form__phone,
+.question__title,
+.question__text  {
+    visibility: hidden;
+}*/
 /***************--------- Pop-up-form ---------***************/
 
 .hidden {
