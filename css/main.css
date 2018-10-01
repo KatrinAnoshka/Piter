@@ -211,7 +211,7 @@ header.scroll .our-contacts__text {
     position: absolute;
     height: 3px;
     width: 100%;
-    background: rgb(155, 153, 153);
+    background: #000;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -271,10 +271,12 @@ header.scroll .our-contacts__text {
     position: relative;
     z-index: 90;
     margin-top: 0;
+    top: -27px;
+    left: 57px;
 }
 .menu.menu_state_open {
     position: relative;
-    top: 20px;
+    top: 2px;
     background-color: transparent;
     opacity: 1;
 }
@@ -495,6 +497,7 @@ a.cons-form__button {
 }
 .features__list {
     width: 1140px;
+    max-width: 100%;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -848,6 +851,13 @@ a.step-form__phone:hover {
     display: flex;
     justify-content: space-between;
 }
+.calc__item-wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
 .calc__item {
     display: -webkit-flex;
     display: -moz-flex;
@@ -861,6 +871,7 @@ a.step-form__phone:hover {
     flex-direction: column;
     -ms-align-items: flex-start;
     align-items: flex-start;
+    margin-right: 20px;
 }
 .calc__span {
     display: block;
@@ -1449,6 +1460,10 @@ a.step-form__phone {
 .proof__flexslider .flex-control-nav {
     position: relative;
 }
+.clients .flex-direction-nav,
+.proof .flex-direction-nav {
+    display: none;
+}
 /*************---------Section-Choose---------*************/
 
 .choose {
@@ -1683,6 +1698,13 @@ a.step-form__phone {
     position: relative;
     top: -480px;
     z-index: 0;
+}
+.question__container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 }
 .question__wrap {
     width: 1090px;

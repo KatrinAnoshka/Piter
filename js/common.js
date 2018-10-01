@@ -115,7 +115,50 @@ new WOW().init();
 	/* Flexslider */
    	
    	$(window).load(function(){
-        $('.stories__flexslider, .lawyers__flexslider, .proof__flexslider').flexslider({
+      //   $('.stories__flexslider, .lawyers__flexslider, .proof__flexslider').flexslider({
+      //       animation: "slide",
+      //       touch: true,
+      //       // animationLoop: false,
+		    // itemWidth: $('.proof__flexslider, .lawyers__flexslider, .stories__flexslider').width()/3,
+		    
+		    // minItems: 3,
+		    // maxItems: 3
+      //   });
+
+
+
+
+// }
+if ($('.menu__icon').is(':visible')) {
+	$('.clients__flexslider').flexslider({
+	    animation: "slide",
+	    touch: true,
+	    // animationLoop: false,
+		itemWidth: $('.clients__flexslider').width()/4,
+		minItems: 2,
+		maxItems: 2,
+	
+	});
+	$('.stories__flexslider, .lawyers__flexslider, .proof__flexslider').flexslider({
+            animation: "slide",
+            touch: true,
+            // animationLoop: false,
+		    itemWidth: $('.proof__flexslider, .lawyers__flexslider, .stories__flexslider').width()/2,
+		    
+		    minItems: 2,
+		    maxItems: 2,
+        });	
+	} else
+$('.clients__flexslider').flexslider({
+    animation: "slide",
+    touch: true,
+    // animationLoop: false,
+	itemWidth: $('.clients__flexslider').width()/4,
+	minItems: 4,
+	maxItems: 4,
+	
+});	
+$('.stories__flexslider, .lawyers__flexslider, .proof__flexslider').flexslider({
             animation: "slide",
             touch: true,
             // animationLoop: false,
@@ -124,26 +167,10 @@ new WOW().init();
 		    minItems: 3,
 		    maxItems: 3
         });
-// if ($('.opent-menu').is(':visible')) {
 
 
 
-// } else {
-
-
-
-// }
-$('.clients__flexslider').flexslider({
-            animation: "slide",
-            touch: true,
-            // animationLoop: false,
-		    itemWidth: $('.clients__flexslider').width()/4,
-		
-		    minItems: 4,
-		    maxItems: 4
-        });
  
- 
-    });
+});
 
 
