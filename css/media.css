@@ -12,6 +12,9 @@
 		-ms-align-items: flex-start;
 		align-items: flex-start;
 	}
+	.flex-direction-nav {
+		display: none;
+	}
 }
 @media only screen and (max-width : 1170px) {
 	
@@ -107,6 +110,7 @@
 		top: -44px;
 		margin-bottom: 52px;
 	}
+	
 
 	/*Section-Features*/
 
@@ -126,49 +130,48 @@
 
 	/*Section-Steps*/
 	
-	.steps-1 {
-		height: 454px;
+	.steps-1__img, .steps-3__img {
+		margin-right: 20px;
 	}
-	.steps-2 {
-		height: 90px;
+	.steps-2__img {
+		margin-left: 20px;
 	}
-	.steps-3 {
-	    height: 365px;
-	}
-
-	/*.steps__wrap, .steps-2__wrap, .steps-3__wrap {
-		padding-top: 55px;
-	}*/
+	
+	
 	.steps__round {
 		width: 150px;
 		height: 150px;
 	}
-	.steps-1__img, .steps-3__img {
-		margin-right: 30px;
-	}
-	.steps-2__img {
-		margin-right: 0;
-		margin-left: 30px;
-	}
+	
 	.steps__number {
 	    font-size: 6.76em;
-	    bottom: 175px;
-	    right: 44px;
+	    bottom: 72px;
+    	right: 22px;
 	}
 	.steps__text {
 	    font-size: 3.503em;
-	    bottom: 185px;
-	    right: 48px;
+	    bottom: 87px;
+    	right: 35px;
 	}
-	.steps-2__img .steps__number,
+	.steps-2__img .steps__number {
+		bottom: 24px;
+    right: 14px;
+	}
+	.steps-2__img .steps__text {
+		bottom: 43px;
+	}
 	.steps-3__img .steps__number {
-	    right: 32px;
-	    bottom: 24px;
+	    right: 15px;
+	    bottom: 28px;
 	}
-	.steps-2__img .steps__text,
 	.steps-3__img .steps__text {
-		bottom: 34px;
+		bottom: 50px;
 	}
+	.steps__title {
+		font-size: 1.8em;
+	}
+	
+	
 
 	/*Section-Benefit*/
 
@@ -176,6 +179,20 @@
 		right: 89px;
 	}
 
+	.benefit__img {
+		margin: 0 40px 0 30px;
+	}
+	.benefit-2__img, .benefit-4__img {
+		margin: 0 30px 0 40px;
+	}
+	/*Section-Lawyers*/
+	.lawyers:before {
+		width: 104%;
+	}
+	.lawyers__img-wrap {
+	    width: 100%;
+	}
+	
 	/*Section-Question*/
 
 	.question__container {
@@ -249,6 +266,7 @@
 	.rates-item ul .name {
 		display: block;
 		text-align: left;
+		width: 93%;
 	}
 	.rates-item .checkbox-yes, .rates-item .checkbox-no {
 		margin: 0;
@@ -277,11 +295,105 @@
 	}
 	.contacts__img-wrap {
 		margin-bottom: 10px;
+		margin-right: 0;
+	}
+	/*Section-Footer*/
+	.footer__developer {
+		margin-top: 20px;
+	}
+	.footer__item--center {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.footer__item--first {
+		padding-right: 15px;
 	}
 	
 }
 
-@media only screen and (max-width : 880px) {
+@media only screen and (max-width : 840px) {
+	
+	/*Section-Steps*/
+
+	.steps__round {
+	    width: 90px;
+	    height: 90px;
+	}
+	.steps__number {
+	    font-size: 4.76em;
+	    bottom: 128px;
+	    right: 7px;
+	}
+	.steps__text {
+	    font-size: 2.4em;
+	    bottom: 137px;
+	    right: 13px;
+	}
+	.steps-2__img .steps__number {
+	    bottom: 11px;
+	    right: 2px;
+	}
+	.steps-2__img .steps__text {
+	    bottom: 22px;
+	}
+	.steps-3__img .steps__number {
+	    right: 0px;
+	    bottom: 11px;
+	}
+	.steps-3__img .steps__text {
+	    bottom: 22px;
+	}
+	/*Section-Guarantees*/
+	.guarantees__wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.guarantees__item {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.guarantees-op-title {
+		display: none;
+	}
+	/*Section-Map*/
+	.map__point {
+		width: 200px;
+		height: 200px;
+	}
+	/*Section-Footer*/
+	.footer__items {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: flex-start;
+		align-items: flex-start;
+	}
+	.footer__item {
+		margin-bottom: 10px;
+	}
+	.footer__item--first {
+		order: 1;
+	}
+	.footer__item--last {
+		-ms-align-items: flex-start;
+		align-items: flex-start;
+	}
 
 }
 
@@ -308,7 +420,37 @@
 	.header-main__subtitle {
 		text-align: center;
 	}
+	/*Section-Features*/
+	.features__wrap {
+		padding-bottom: 0;
+	}
 
+	/*Section-Steps*/
+	.steps {
+		top: -197px;
+	}
+	/*Section-Step-Form*/
+
+	.step-form,
+	.benefit {
+	    top: -197px;
+	}
+	.step-form__wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.step-form__descr {
+		-ms-align-items: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	.step-form__title,
+	.step-form__text {
+		text-align: center;
+	}
 	/*Section-Whom*/
 
 	.whom-op-title {
@@ -316,6 +458,25 @@
 	}
 	.whom__video {
 		width: 100%;
+	}
+	/*Section-Benefit*/
+	.benefit__wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		margin-top: 0;
+	}
+	.benefit__title {
+		line-height: 1;
+	}
+	.benefit-2__img,
+	.benefit-4__img {
+		order: -1;
+	}
+	.benefit__img {
+		margin: 30px 0;
 	}
 
 	/*Section-Booked*/
@@ -343,7 +504,10 @@
 	.booked__text {
 		margin-top: 15px;
 	}
-
+	/*Section-Stories*/
+	.stories__title {
+		padding-bottom: 25px;
+	}
 	/*Section-Calc*/
 
 	.calc {
@@ -367,19 +531,107 @@
 
 	/*Section-Numbers */
 
-	.numbers {
-		top: -197px;
+	.numbers,
+	.lawyers__wrap {
+		top: -215px;
+	}
+	/*Section-Choose*/
+	.choose {
+		top: -311px;
+		height: auto;	
+	}
+	.choose__form {
+		padding-bottom: 75px;
 	}
 
-	/*Section-Steps*/
-
-	.steps {
-		top: -197px;
+	/*Section-Clients*/
+	.clients {
+		top: -410px;
 	}
+	/*Section-guarantees*/
+	.guarantees {
+		top: -390px;
+	}
+	/*Section-Proof */
+	.proof {
+		top: -393px;
+	}
+	/*Section-Judge*/
+	.judge {
+		top: -395px;
+	}
+	.judge .step-form__wrap {
+		padding-bottom: 0;
+	}
+	/*Section-Doubts*/
+	.doubts {
+		top: -399px;
+	}
+	/*Section-Lawyers*/
+	.lawyers__slide {
+		width: 320px;
+	}
+	.lawyers:before {
+		top: 11%;
+    	left: -2%;
+	}
+	/*Section-Question*/
+	.question {
+		top: -398px;
+	}
+	.question__wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.question__title,
+	.question__text {
+		text-align: center;
+	}
+	.question__text {
+		margin: 30px 0;
+	}
+	/*Section-Review*/
+	.review {
+		top: -401px;
+	}
+	.review__wrap {
+		padding-bottom: 30px;
+	}
+	/*Section-Conditions*/
+	.conditions {
+		top: -392px;
+	}
+	.rates-item {
+	    width: 82%;
+	}
+
+
+
+	
 
 }
+@media only screen and (max-width : 728px) {
+	/*Section-Steps*/
 
+	.steps-1__img,
+	.steps-2__img,
+	.steps-3__img {
+		display: none;
+	}
+	.steps__title,
+	.steps-1__text, 
+	.steps-2__text, 
+	.steps-3__text {
+		text-align: center;
+	}
+}
 @media only screen and (max-width : 640px) {
+	
 	
 	/*Section-Numbers*/
 
@@ -397,8 +649,15 @@
 		margin: 15px 0;
 	}
 	.numbers-wrap {
-		padding-bottom: 40px;
+		padding-bottom: 20px;
 	}
+
+	/*Section-Contacts*/
+	.contacts__item {
+		width: 48%;
+		margin-bottom: 25px;
+	}
+
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 500px) {
@@ -423,7 +682,11 @@
 		line-height: 2.9;
     	font-size: 1.3em;
 	}
-
+	/*Section-Stories*/
+	a.stories__button {
+		line-height: 3.4;
+    	font-size: 1em;
+	}
 	/*Section-Whom*/
 	
 	.whom__video {
@@ -437,7 +700,54 @@
 	.whom__descr {
 		margin-bottom: 31px;
 	}
-
+	/*Section-Review*/
+	.lawyers__descr-wrap {
+		height: 106px;
+	}
+	/*Section-Review*/
+	.tab_item {
+	    height: auto;
+	    margin: 0 auto;
+	        width: 90%;
+	}
+	.tabs {
+		width: 90%;
+    	margin: 0 auto;
+	}
+	.review__video {
+		width: 100%;
+	}
+	.review__video iframe {
+	    width: 100%;
+    	/*height: auto;*/
+	    left: 50%;
+	    position: relative;
+	    transform: translate(-50%);
+	}
+	/*Section-Steps*/
+	.steps__wrap, .steps-2__wrap, .steps-3__wrap {
+		padding-top: 50px;
+		padding-bottom: 40px;
+		margin-top: 0;
+	}
+	.steps-1, .steps-2, .steps-3 {
+		height: auto;
+	}
+	.steps-2:before,
+	.steps-2:after {
+		display: none;
+	}
+	/*Section-Step-Form*/
+	.step-form__wrap {
+		padding: 50px 20px;
+	}
+	.step-form__title {
+		font-size: 2em;
+	}
+	/*Section-Benefit*/
+	.benefit__title {
+		padding: 50px 20px 30px;
+	}
 	/*Section-Features*/
 
 	.features__wrap {
@@ -468,7 +778,17 @@
 	.calc .input-name {
 		width: 300px;
 	}
-
+	/*Section-Guarantees*/
+	.guarantees__title {
+		padding: 50px 20px 40px;
+	}
+	.guarantees__wrap {
+		padding-bottom: 30px;
+	}
+	/*Section-Proof*/
+	.proof__wrap {
+		padding: 50px 20px 70px;
+	}
 	/*Section-Numbers*/
 
 	.numbers-wrap {
@@ -477,6 +797,48 @@
 	.numbers__items {
 		margin-top: 15px;
 	}
+	/*Section-Judge*/
+	.step-form__text {
+		padding: 30px 0;
+	}
+	.judge .choose__form {
+	    padding-bottom: 50px;
+	}
+	/*Section-Doubts*/
+	.doubts__title {
+		padding: 50px 20px 40px;
+	}
+	/*Section-Question*/
+	.question__wrap {
+		padding: 50px 20px;
+	}
+	/*Section-Conditiones*/
+	.conditions__wrap {
+		padding: 10px 20px 40px;
+	}
+	.conditions__title {
+		padding-bottom: 40px;
+	}
+	.rates-item {
+	    width: 100%;
+	}
+	.download-list {
+		margin-top: 15px;
+	}
+	/*Section-Contacts*/
+	.contacts__item {
+		width: 75%;
+		margin-bottom: 35px;
+	} 
+	.contacts__wrap {
+		padding: 50px 20px 15px;
+	}
+	/*Section-Map*/
+	.map__point {
+		display: none;
+	} 
+
+
 }
 
 /* Custom, iPhone Retina */
@@ -500,6 +862,21 @@
 	    width: 100%;
 	    height: 100%;
 	}
+	/*Section-Lawyers*/
+	.lawyers__img-wrap {
+		height: 260px;
+	}
+	/*Section-Review*/
+	.audio__item {
+	    width: 310px;
+	    height: 380px;
+	}
+	/*Section-Review*/
+	.review__video iframe {
+    
+    height: 200px;
+    }
+
 }
 
 /*==========  Mobile First Method  ==========*/

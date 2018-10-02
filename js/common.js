@@ -129,48 +129,51 @@ new WOW().init();
 
 
 // }
-if ($('.menu__icon').is(':visible')) {
+if ($('.whom-op-title').is(':hidden')) {
+		$('.clients__flexslider').flexslider({
+	    animation: "slide",
+	    touch: true,
+		itemWidth: $('.clients__flexslider').width()/4,
+		minItems: 1,
+		maxItems: 1,
+	});
+	$('.stories__flexslider, .lawyers__flexslider, .proof__flexslider').flexslider({
+        animation: "slide",
+        touch: true,
+		itemWidth: $('.proof__flexslider, .lawyers__flexslider, .stories__flexslider').width()/2,
+		minItems: 1,
+		maxItems: 1,
+    });		
+} else if ($('.menu__icon').is(':visible')) {
 	$('.clients__flexslider').flexslider({
 	    animation: "slide",
 	    touch: true,
-	    // animationLoop: false,
 		itemWidth: $('.clients__flexslider').width()/4,
 		minItems: 2,
-		maxItems: 2,
-	
+		maxItems: 2,	
 	});
 	$('.stories__flexslider, .lawyers__flexslider, .proof__flexslider').flexslider({
-            animation: "slide",
-            touch: true,
-            // animationLoop: false,
-		    itemWidth: $('.proof__flexslider, .lawyers__flexslider, .stories__flexslider').width()/2,
-		    
-		    minItems: 2,
-		    maxItems: 2,
+        animation: "slide",
+        touch: true,       
+		itemWidth: $('.proof__flexslider, .lawyers__flexslider, .stories__flexslider').width()/2,		    
+		minItems: 2,
+		maxItems: 2,
         });	
-	} else
-$('.clients__flexslider').flexslider({
-    animation: "slide",
-    touch: true,
-    // animationLoop: false,
-	itemWidth: $('.clients__flexslider').width()/4,
-	minItems: 4,
-	maxItems: 4,
-	
-});	
-$('.stories__flexslider, .lawyers__flexslider, .proof__flexslider').flexslider({
-            animation: "slide",
-            touch: true,
-            // animationLoop: false,
-		    itemWidth: $('.proof__flexslider, .lawyers__flexslider, .stories__flexslider').width()/3,
-		    
-		    minItems: 3,
-		    maxItems: 3
-        });
-
-
-
- 
+	}  else
+	$('.clients__flexslider').flexslider({
+	    animation: "slide",
+	    touch: true,
+		itemWidth: $('.clients__flexslider').width()/4,
+		minItems: 4,
+		maxItems: 4,	
+	});	
+	$('.stories__flexslider, .lawyers__flexslider, .proof__flexslider').flexslider({
+        animation: "slide",
+        touch: true,
+		itemWidth: $('.proof__flexslider, .lawyers__flexslider, .stories__flexslider').width()/3,
+		minItems: 3,
+		maxItems: 3
+    });
 });
 
 

@@ -557,7 +557,7 @@ a.cons-form__button {
     content: "";
     z-index: -1;
     position: absolute;
-    width: 102%;
+    width: 103%;
     height: 44%;
     top: 40%;
     left: -1%;
@@ -582,7 +582,7 @@ a.cons-form__button {
     /*justify-content: space-between;*/
     padding: 30px 20px;
        margin: 35px 10px 35px;
-    box-shadow: 0px 0px 51.3px -13.3px rgba(8, 74, 135, 0.4);
+    box-shadow: 3px -3px 51.3px -13.3px rgba(8, 74, 135, 0.66);
 }
 .stories__slide:before {
     content: "“";
@@ -720,6 +720,9 @@ a.stories__button {
 .lawyers .flexslider:hover .flex-direction-nav .flex-prev {
     left: -45px;
     top: 40%;
+}
+.lawyers .flexslider .slides img {
+    height: 100%;
 }
 
 /***********----------Section-Booked----------***********/
@@ -1392,7 +1395,7 @@ a.step-form__phone {
     margin: 10px 10px 5px 0;   
 }
 .open {
-    height: auto; 
+    height: auto!important; 
     position: relative;
     z-index: 25;
 }
@@ -1641,6 +1644,7 @@ a.step-form__phone {
     font-size: 1.2em;
     color: #000;
     padding: 20px;
+    padding-right: 33px;
     margin-top: 15px;
     cursor: pointer;
     transition: color 0.2s ease-out;
