@@ -3,10 +3,13 @@ $(document).ready(function() {
 	/* Adaptive menu */
    
     $('.menu__icon').on('click', function(){
-        $('.menu').toggleClass('menu_state_open');
-        $('.our-contacts').toggleClass('hidden-div');
+        // $('.menu').addClass('menu_state_open');
+        $(".menu__links").slideToggle();
+		
+        // $('.our-contacts').toggleClass('hidden-div');
+        return false;
     });
-     
+   
 
    	
 
