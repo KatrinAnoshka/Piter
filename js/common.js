@@ -2,15 +2,20 @@ $(document).ready(function() {
 
 	/* Adaptive menu */
    
-    $('.menu__icon').on('click', function(){
-        // $('.menu').addClass('menu_state_open');
-        $(".menu__links").slideToggle();
+    // $('.menu__icon').on('click', function(){
+    //     // $('.menu').addClass('menu_state_open');
+    //     $(".menu__links").slideToggle();
 		
-        // $('.our-contacts').toggleClass('hidden-div');
-        return false;
-    });
+    //     // $('.our-contacts').toggleClass('hidden-div');
+    //     return false;
+    // });
    
-
+    $(".menu__icon").click(function() {
+		$(this).toggleClass("on");
+		$(".menu").slideToggle();
+		$('.our-contacts').toggleClass('hidden-div')
+		return false;
+	});
    	
 
 	/* Smooth scroll*/
@@ -20,11 +25,11 @@ $(document).ready(function() {
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				headerHeight = $('.header').height() + 0;  
+				headerHeight = $('.header').height() + 80;  
 			if (target.length) {
 				$('html,body').animate({
 					scrollTop: target.offset().top - headerHeight
-				}, 1500, function() {
+				}, 800, function() {
 				target.focus();
 			});
 			return false;
@@ -68,6 +73,26 @@ $(document).ready(function() {
 
 	$("a.fancy").fancybox();
 
+	// /* Chrome Smooth Scroll */ 
+
+	// try {
+	// 	$.browserSelector();
+	// 	if($("html").hasClass("chrome")) {
+	// 		$.smoothScroll();
+	// 	}
+	// } catch(err) {
+	// };
+
+
+	$(".cond__button").click(function() {
+		$("#form_back input[name=formname]").val($(this).text());
+	}).magnificPopup({
+		type:"inline",
+		fixedContentPos: false,
+		mainClass: 'mfp-forms'
+	});
+
+	
 	
 
 	/*******************  Табы переключатели   *******************/
