@@ -205,3 +205,15 @@ if ($('.whom-op-title').is(':hidden')) {
 });
 
 
+$(document).ready(function() {
+	var heightMax = 0;
+		$('.slide__descr').each(function(i,elem) {
+			var height = $(elem).outerHeight();
+			console.log(height);
+			if (heightMax<height)
+				heightMax = height;
+		});
+	  $('.slide__descr').css({'height': heightMax + 'px'});
+
+});
+	
