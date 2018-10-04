@@ -126,12 +126,14 @@ new WOW().init();
 	if ($(window).width() > 992)   {
 		$(window).scroll(function () {
 			var scrolled = $(window).scrollTop();
-			if (scrolled >= 20) {
+			if (scrolled >= 5) {
 				$('header').addClass('scroll');
+				// $('header.scroll .logo-header__title, header.scroll .our-contacts__mail').slideUp();
 			}
 			else {
 				if (scrolled < 180) {
 					$('header').removeClass('scroll');
+					// $('header.scroll .logo-header__title, header.scroll .our-contacts__mail').slideUp();
 				}
 			}
 		});

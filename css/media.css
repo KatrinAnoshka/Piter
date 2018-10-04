@@ -209,9 +209,9 @@
 		margin: 0 30px 0 40px;
 	}
 	/*Section-Lawyers*/
-	.lawyers:before {
+	/*.lawyers:before {
 		width: 104%;
-	}
+	}*/
 	.lawyers__img-wrap {
 	    width: 100%;
 	}
@@ -596,7 +596,8 @@
 	}
 	.lawyers:before {
 		top: 11%;
-    	left: -2%;
+    	left: -3%;
+    	width: 106%;
 	}
 	/*Section-Question*/
 	.question {
@@ -631,6 +632,15 @@
 	}
 	.rates-item {
 	    width: 82%;
+	}
+	/*Section-Tarif*/
+	.tarif,
+	.contacts,
+	.map {
+		top: -400px;
+	}
+	.footer {
+		top: -48px;
 	}
 
 
