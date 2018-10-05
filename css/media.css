@@ -1,8 +1,9 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1205px) {
+@media only screen and (max-width : 1205px) {	
 	/*Section-Header-Menu*/
+	
 	.logo-menu-wrap {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -17,7 +18,6 @@
 	}
 }
 @media only screen and (max-width : 1170px) {
-	
 	/*Section-Header-Menu*/
 	.menu__links-item {
 		padding-right: 1em;
@@ -47,20 +47,15 @@
 	.whom__title {
 		padding-bottom: 20px;
 	}
-
 	/*Section-Review*/
-
 	.audio__item {
 		width: 400px;
 	}
-
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
 	/*Section-Header-Menu*/
-
 	.menu__icon {
 		display: block;
 	}
@@ -84,14 +79,8 @@
 	        -ms-flex-align: center;
 	            align-items: center;
 	    line-height: 34px;
-	    /*position: relative;
-	    z-index: 90;
-	    margin-top: 0;
-	    top: -27px;
-	    left: 57px;*/
 	}
-	/*Section-Header-Main*/
-	
+	/*Section-Header-Main*/	
 	.header-main {
 		height: auto;
 	}
@@ -115,9 +104,7 @@
 		margin-top: 25px;
 		margin-bottom: 25px;
 	}
-
 	/*Section-Whom*/
-
 	.whom__wrap {
 		display: flex;
     	flex-direction: column;
@@ -132,17 +119,12 @@
 	.whom__descr {
 		top: -44px;
 		margin-bottom: 52px;
-	}
-	
-
+	}	
 	/*Section-Features*/
-
 	.features-op-title {
 		display: none;
 	}
-
 	/*Section-Calc*/
-
 	.calc__item-wrap {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -150,22 +132,17 @@
 		-o-flex-direction: column;
 		flex-direction: column;
 	}
-
-	/*Section-Steps*/
-	
+	/*Section-Steps*/	
 	.steps-1__img, .steps-3__img {
 		margin-right: 20px;
 	}
 	.steps-2__img {
 		margin-left: 20px;
-	}
-	
-	
+	}	
 	.steps__round {
 		width: 150px;
 		height: 150px;
-	}
-	
+	}	
 	.steps__number {
 	    font-size: 6.76em;
 	    bottom: 72px;
@@ -193,15 +170,10 @@
 	.steps__title {
 		font-size: 1.8em;
 	}
-	
-	
-
 	/*Section-Benefit*/
-
 	.benefit__number {
 		right: 89px;
 	}
-
 	.benefit__img {
 		margin: 0 40px 0 30px;
 	}
@@ -209,15 +181,10 @@
 		margin: 0 30px 0 40px;
 	}
 	/*Section-Lawyers*/
-	/*.lawyers:before {
-		width: 104%;
-	}*/
 	.lawyers__img-wrap {
 	    width: 100%;
 	}
-	
 	/*Section-Question*/
-
 	.question__container {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -234,9 +201,7 @@
 	.question__title {
 		margin-bottom: 15px;
 	}
-
 	/*Section-Review*/
-
 	.review__container {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -265,7 +230,6 @@
 	.review__docs a:last-child {
 	    margin-right: 1%;
 	}
-
 	/*Section-Conditions*/
 	.rates-label {
 		display: none;
@@ -297,9 +261,7 @@
 	a.cond__button {
 		width: 100%;
 	}
-
 	/*Section-Contacts*/
-
 	.contacts__item {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -339,14 +301,11 @@
 	}
 	.footer__item--first {
 		padding-right: 15px;
-	}
-	
+	}	
 }
 
-@media only screen and (max-width : 840px) {
-	
+@media only screen and (max-width : 840px) {	
 	/*Section-Steps*/
-
 	.steps__round {
 	    width: 90px;
 	    height: 90px;
@@ -417,7 +376,6 @@
 		-ms-align-items: flex-start;
 		align-items: flex-start;
 	}
-
 }
 
 /* Small Devices, Tablets */
@@ -437,9 +395,7 @@
 		-webkit-animation: none !important;
 		animation: none !important;
 	}
-
 	/*Section-Header-Main*/
-
 	.header-main__subtitle {
 		text-align: center;
 	}
@@ -447,13 +403,11 @@
 	.features__wrap {
 		padding-bottom: 0;
 	}
-
 	/*Section-Steps*/
 	.steps {
 		top: -197px;
 	}
 	/*Section-Step-Form*/
-
 	.step-form,
 	.benefit {
 	    top: -197px;
@@ -475,7 +429,6 @@
 		text-align: center;
 	}
 	/*Section-Whom*/
-
 	.whom-op-title {
 		display: none;
 	}
@@ -501,9 +454,7 @@
 	.benefit__img {
 		margin: 30px 0;
 	}
-
 	/*Section-Booked*/
-	
 	.booked {
 		height: auto;
 	}
@@ -532,7 +483,6 @@
 		padding-bottom: 25px;
 	}
 	/*Section-Calc*/
-
 	.calc {
 		top: -197px;
 	}
@@ -551,9 +501,7 @@
 	.calc__item {
 		margin-right: 0;
 	}
-
 	/*Section-Numbers */
-
 	.numbers,
 	.lawyers__wrap {
 		top: -215px;
@@ -566,7 +514,6 @@
 	.choose__form {
 		padding-bottom: 75px;
 	}
-
 	/*Section-Clients*/
 	.clients {
 		top: -410px;
@@ -642,15 +589,9 @@
 	.footer {
 		top: -48px;
 	}
-
-
-
-	
-
 }
 @media only screen and (max-width : 728px) {
 	/*Section-Steps*/
-
 	.steps-1__img,
 	.steps-2__img,
 	.steps-3__img {
@@ -664,10 +605,7 @@
 	}
 }
 @media only screen and (max-width : 640px) {
-	
-	
 	/*Section-Numbers*/
-
 	.numbers__items {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -684,23 +622,18 @@
 	.numbers-wrap {
 		padding-bottom: 20px;
 	}
-
 	/*Section-Contacts*/
 	.contacts__item {
 		width: 48%;
 		margin-bottom: 25px;
 	}
-
 }
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 500px) {
-	
+@media only screen and (max-width : 500px) {	
 	body {
 		font-size: 0.8em;
 	}
-
 	/*Section-Header-Main*/
-
 	.header-main__wrap,
 	h1.header-main__title {
 		padding-top: 30px;
@@ -720,8 +653,7 @@
 		line-height: 3.4;
     	font-size: 1em;
 	}
-	/*Section-Whom*/
-	
+	/*Section-Whom*/	
 	.whom__video {
 	    height: 335px;
 	    margin-bottom: 18px;
@@ -741,7 +673,7 @@
 	.tab_item {
 	    height: auto;
 	    margin: 0 auto;
-	        width: 90%;
+	    width: 90%;
 	}
 	.tabs {
 		width: 90%;
@@ -752,7 +684,6 @@
 	}
 	.review__video iframe {
 	    width: 100%;
-    	/*height: auto;*/
 	    left: 50%;
 	    position: relative;
 	    transform: translate(-50%);
@@ -796,15 +727,11 @@
 		width: 53%;
 		margin-bottom: 35px;
 	}
-
 	/*Section-Stories*/
-
 	.stories__title {
 		padding: 50px 0 50px;
 	}
-
 	/*Section-Calc*/
-
 	.calc__wrap {
 		padding: 50px 20px;
 	}
@@ -823,7 +750,6 @@
 		padding: 50px 20px 70px;
 	}
 	/*Section-Numbers*/
-
 	.numbers-wrap {
 		padding-top: 50px;
 	}
@@ -870,14 +796,11 @@
 	.map__point {
 		display: none;
 	} 
-
-
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 400px) {
 	/*Section-Header-Menu*/
-
 	.logo-header {
 		margin-right: 0;
 		margin-top: 0;
@@ -885,9 +808,7 @@
 	.logo-header__img {
 	    width: 92px;
 	}
-
 	/*Section-Whom*/
-
 	.whom__video {
 	    height: 267px;
 	}
@@ -905,11 +826,9 @@
 	    height: 380px;
 	}
 	/*Section-Review*/
-	.review__video iframe {
-    
-    height: 200px;
+	.review__video iframe {   
+    	height: 200px;
     }
-
 }
 
 /*==========  Mobile First Method  ==========*/
